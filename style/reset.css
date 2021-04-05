@@ -1,0 +1,59 @@
+*,
+:root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+
+@font-face {
+  font-family: MADETOMMY;
+  src: url(../fonts/MADE\ TOMMY\ Medium.otf);
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.upperHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.upperHeader > img {
+  color: #fff;
+  max-width: 100%;
+  height: 4rem;
+  fill: white;
+}
+
+#searchIcon {
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.upperHeader .login {
+  display: flex;
+  gap: 2rem;
+  font-family: MADETOMMY, "sans-serif";
+}
+
+.lowerHeader {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.lowerHeader > a {
+  color: #fff;
+  text-decoration: none;
+  font-family: MADETOMMY, "sans-serif";
+}
