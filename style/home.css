@@ -1,0 +1,160 @@
+body {
+  min-height: 100vh;
+  margin-bottom: 2rem;
+}
+
+.thumbnail {
+  background: rgb(0, 0, 0);
+  /* will change depends on the content */
+  height: 20rem;
+}
+
+.highlight {
+  margin-top: 2rem;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.highlight1,
+.highlight2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.highlight1 > h2,
+.highlight2 > h2 {
+  text-transform: capitalize;
+  font-family: MADETOMMY, "sans-serif";
+  line-height: 1.5;
+}
+
+.box1,
+.box2 {
+  height: 15rem;
+  width: 100%;
+  background: rgb(0, 0, 0);
+}
+
+.product {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product > div {
+  height: 10rem;
+  width: 45%;
+  background-color: rgb(0, 0, 0);
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+}
+
+.overlay-content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-content > form {
+  display: flex;
+  gap: 1rem;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+
+.overlay input[type="text"] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  width: 100%;
+  color: #fff;
+  background: none;
+  text-decoration: underline;
+}
+
+.overlay button {
+  width: 20%;
+  background: none;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.highlight,
+.product {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+  .highlight,
+  .product {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .highlight {
+    /* padding: 2rem; */
+    flex-direction: row;
+  }
+
+  .highlight1,
+  .highlight2 {
+    flex-direction: row;
+  }
+
+  .box1,
+  .box2 {
+    min-width: 18rem;
+    max-width: 18rem;
+  }
+
+  .product > div {
+    width: 23%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .highlight,
+  .product {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .box1,
+  .box2 {
+    min-width: 25rem;
+    max-width: 25rem;
+  }
+}
