@@ -1,77 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stores Page</title>
-    <link rel="stylesheet" href="../style/reset.css">
-    <link rel="stylesheet" href="../style/stores.css">
-</head>
-<body>
-    <header>
-        <div class="upperHeader">
-          <img
-            onclick="openSearch()"
-            id="searchIcon"
-            src="../icons/loupe.svg"
-            alt="search"
-          />
-          <img src="../icons/logo_white.png" alt="lele" />
-  
-          <div class="login">
-            <p>Login</p>
-            <p>Register</p>
-          </div>
-        </div>
-  
-        <div class="lowerHeader">
-          <a href="#">Home</a>
-          <a href="#">Categories</a>
-          <a href="#">About</a>
-          <a href="#">Stores</a>
-        </div>
-      </header>
-    
-    <h2>Check out our stores!</h2>
-    
-    <div class="content-1">
-        <div class="info-store">
-            <h3>Name</h3>
-            <h5>Address:</h5>
-            <h5>E-mail:</h5>
-            <h5>Phone Number:</h5>
-        </div>
-        <div class="info-store">
-            <h3>Name</h3>
-            <h5>Address:</h5>
-            <h5>E-mail:</h5>
-            <h5>Phone Number:</h5>
-        </div>
-        <div class="info-store">
-            <h3>Name</h3>
-            <h5>Address:</h5>
-            <h5>E-mail:</h5>
-            <h5>Phone Number:</h5>
-        </div>
-        <div class="info-store">
-            <h3>Name</h3>
-            <h5>Address:</h5>
-            <h5>E-mail:</h5>
-            <h5>Phone Number:</h5>
-        </div>
-        <div class="info-store">
-            <h3>Name</h3>
-            <h5>Address:</h5>
-            <h5>E-mail:</h5>
-            <h5>Phone Number:</h5>
-        </div>
-        <div class="info-store">
-            <h3>Name</h3>
-            <h5>Address:</h5>
-            <h5>E-mail:</h5>
-            <h5>Phone Number:</h5>
-        </div>
-    </div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Stores Page</title>
+		<link rel="stylesheet" href="../style/reset.css" />
+		<link rel="stylesheet" href="../style/stores.css" />
+	</head>
+	<body>
+		<header>
+			<div class="upperHeader">
+				<img
+					onclick="openSearch()"
+					id="searchIcon"
+					src="../icons/loupe.svg"
+					alt="search"
+				/>
+				<img src="../icons/logo_white.png" alt="lele" />
+
+				<div class="login">
+					<p>Login</p>
+					<p>Register</p>
+				</div>
+			</div>
+
+			<div class="lowerHeader">
+				<a href="#">Home</a>
+				<a href="#">Categories</a>
+				<a href="#">About</a>
+				<a href="#">Stores</a>
+			</div>
+		</header>
+
+		<div id="myOverlay" class="overlay">
+			<span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+				>×</span
+			>
+			<div class="overlay-content">
+				<form>
+					<input
+						type="text"
+						placeholder="Search Here..."
+						name="search"
+					/>
+					<button type="submit">
+						<img src="../icons/loupe.svg" alt="search" />
+					</button>
+				</form>
+			</div>
+		</div>
+
+		<h2>Check out our stores!</h2>
+
+		<div class="content-1">
+			<div class="info-store">
+				<h3>Name</h3>
+				<h5>Address:</h5>
+				<h5>E-mail:</h5>
+				<h5>Phone Number:</h5>
+			</div>
+			<div class="info-store">
+				<h3>Name</h3>
+				<h5>Address:</h5>
+				<h5>E-mail:</h5>
+				<h5>Phone Number:</h5>
+			</div>
+			<div class="info-store">
+				<h3>Name</h3>
+				<h5>Address:</h5>
+				<h5>E-mail:</h5>
+				<h5>Phone Number:</h5>
+			</div>
+			<div class="info-store">
+				<h3>Name</h3>
+				<h5>Address:</h5>
+				<h5>E-mail:</h5>
+				<h5>Phone Number:</h5>
+			</div>
+			<div class="info-store">
+				<h3>Name</h3>
+				<h5>Address:</h5>
+				<h5>E-mail:</h5>
+				<h5>Phone Number:</h5>
+			</div>
+			<div class="info-store">
+				<h3>Name</h3>
+				<h5>Address:</h5>
+				<h5>E-mail:</h5>
+				<h5>Phone Number:</h5>
+			</div>
+		</div>
+
+		<script src="../src/search.js"></script>
+	</body>
 </html>
