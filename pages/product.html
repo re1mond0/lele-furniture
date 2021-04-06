@@ -8,11 +8,54 @@
 			defer
 			src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
 		></script>
+		<link rel="stylesheet" href="../style/reset.css" />
 		<link rel="stylesheet" href="../style/productStyle.css" />
 		<title>Lele Products</title>
-		<script src="../src/productPage.js"></script>
 	</head>
+
 	<body>
+		<header>
+			<div class="upperHeader">
+				<img
+					onclick="openSearch()"
+					id="searchIcon"
+					src="../icons/loupe.svg"
+					alt="search"
+				/>
+				<img src="../icons/logo_white.png" alt="lele" />
+
+				<div class="login">
+					<p>Login</p>
+					<p>Register</p>
+				</div>
+			</div>
+
+			<div class="lowerHeader">
+				<a href="#">Home</a>
+				<a href="#">Categories</a>
+				<a href="#">About</a>
+				<a href="#">Stores</a>
+			</div>
+		</header>
+
+		<div id="myOverlay" class="overlay">
+			<span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+				>×</span
+			>
+			<div class="overlay-content">
+				<form>
+					<input
+						type="text"
+						placeholder="Search Here..."
+						name="search"
+					/>
+					<button type="submit">
+						<img src="../icons/loupe.svg" alt="search" />
+					</button>
+				</form>
+			</div>
+		</div>
+
 		<div id="content">
 			<span class="slide">
 				<a href="#" onclick="openSlideMenu()">
@@ -81,5 +124,8 @@
 				</div>
 			</div>
 		</div>
+
+		<script src="../src/productPage.js"></script>
+		<script src="../src/search.js"></script>
 	</body>
 </html>
