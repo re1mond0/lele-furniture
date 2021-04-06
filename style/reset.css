@@ -43,6 +43,11 @@ header {
 	font-family: MADETOMMY, "sans-serif";
 }
 
+.login a {
+	text-decoration: none;
+	color: white;
+}
+
 .lowerHeader {
 	display: flex;
 	margin-top: 2rem;
