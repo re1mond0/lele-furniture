@@ -1,47 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="../style/reset.css">
-    <link rel="stylesheet" href="../style/aboutUS.css">
-</head>
-<body>
-    <header>
-        <div class="upperHeader">
-          <img
-            onclick="openSearch()"
-            id="searchIcon"
-            src="../icons/loupe.svg"
-            alt="search"
-          />
-          <img src="../icons/logo_white.png" alt="lele" />
-  
-          <div class="login">
-            <p>Login</p>
-            <p>Register</p>
-          </div>
-        </div>
-  
-        <div class="lowerHeader">
-          <a href="#">Home</a>
-          <a href="#">Categories</a>
-          <a href="#">About</a>
-          <a href="#">Stores</a>
-        </div>
-      </header>
-    <section class="aboutUS">
-        <img class="logoImg" src="../icons/logo.svg" alt="">
-            <div class="txt">
-                <div class="TTLtxt">We care, we really do</div>
-                <div class="ISItxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eum! <br>ipsum dolor sit amet consectetur, adipisicing elit. 
-                    <br>Ipsa iusto natus ad, magnam nihil excepturi eligendi deleniti voluptatum autem <br>vitae quaerat nemo dolor commodi eum tenetur dolore, repudiandae consequuntur earum?
-                </div>
-            </div>
-    </section>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>About Us</title>
+		<link rel="stylesheet" href="../style/reset.css" />
+		<link rel="stylesheet" href="../style/aboutUS.css" />
+	</head>
 
-</body>
+	<body>
+		<header>
+			<div class="upperHeader">
+				<img
+					onclick="openSearch()"
+					id="searchIcon"
+					src="../icons/loupe.svg"
+					alt="search"
+				/>
+				<img src="../icons/logo_white.png" alt="lele" />
 
+				<div class="login">
+					<p>Login</p>
+					<p>Register</p>
+				</div>
+			</div>
+
+			<div class="lowerHeader">
+				<a href="#">Home</a>
+				<a href="#">Categories</a>
+				<a href="#">About</a>
+				<a href="#">Stores</a>
+			</div>
+		</header>
+
+		<div id="myOverlay" class="overlay">
+			<span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+				>×</span
+			>
+			<div class="overlay-content">
+				<form>
+					<input
+						type="text"
+						placeholder="Search Here..."
+						name="search"
+					/>
+					<button type="submit">
+						<img src="../icons/loupe.svg" alt="search" />
+					</button>
+				</form>
+			</div>
+		</div>
+
+		<section class="aboutUS">
+			<img class="logoImg" src="../icons/logo.svg" alt="" />
+			<div class="txt">
+				<div class="TTLtxt">We care, we really do</div>
+				<div class="ISItxt">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Cupiditate, eum! <br />ipsum dolor sit amet consectetur,
+					adipisicing elit. <br />Ipsa iusto natus ad, magnam nihil
+					excepturi eligendi deleniti voluptatum autem <br />vitae
+					quaerat nemo dolor commodi eum tenetur dolore, repudiandae
+					consequuntur earum?
+				</div>
+			</div>
+		</section>
+
+		<script src="../src/search.js"></script>
+	</body>
 </html>
