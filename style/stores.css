@@ -1,0 +1,18 @@
+
+h2{
+    margin-top: 4rem;
+    margin-left: 7rem;
+    margin-bottom: 2rem;
+    font-family: MADETOMMY,'sans-serif';
+}
+.content-1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 7rem;
+    font-family: MADETOMMY,'sans-serif';
+}
+
+.info-store{
+    width: 45%;
+    margin-bottom: 2rem;
+}
