@@ -22,7 +22,9 @@
 					src="../icons/loupe.svg"
 					alt="search"
 				/>
-				<img src="../icons/logo_white.png" alt="lele" />
+				<div class="mainLogo">
+					<img src="../icons/logo_white.png" alt="lele" />
+				</div>
 
 				<div class="login">
 					<a href="login.html">Login</a>
@@ -59,8 +61,20 @@
 		<div id="content">
 			<span class="slide">
 				<a href="#" onclick="openSlideMenu()">
-					<i class="fas fa-bars"></i>
+					<i id="barsLogo" class="fas fa-bars"></i>
 				</a>
+
+				<span id="mid" class="container">
+					<span class="subHead containerItem"> Products </span>
+					<div class="containerItem">
+						<label>Sort: </label>
+						<select id="sortBy">
+							<option>Most relevant</option>
+							<option>Price: High to Low</option>
+							<option>Price: Low to High</option>
+						</select>
+					</div>
+				</span>
 			</span>
 
 			<div id="menu" class="nav">
@@ -74,53 +88,66 @@
 				<a href="#">Mirrors</a>
 			</div>
 
-			<div id="mid" class="container">
-				<span class="subHead containerItem"> Products </span>
-				<div class="containerItem">
-					<label>Sort: </label>
-					<select id="sortBy">
-						<option>Most relevant</option>
-						<option>Price: High to Low</option>
-						<option>Price: Low to High</option>
-					</select>
-				</div>
-			</div>
 			<div id="productList" class="container">
 				<div class="productItem">
-					<div class="productImage"></div>
+					<a href="item.html">
+						<div class="productImage"></div>
+					</a>
 				</div>
 				<div class="productItem">
-					<div class="productImage"></div>
+					<a href="item.html">
+						<div class="productImage"></div>
+					</a>
 				</div>
 				<div class="productItem">
-					<div class="productImage"></div>
+					<a href="item.html">
+						<div class="productImage"></div>
+					</a>
 				</div>
 				<div class="productItem">
-					<div class="productImage"></div>
+					<a href="item.html">
+						<div class="productImage"></div>
+					</a>
 				</div>
 				<div class="productItem">
-					<div class="productImage"></div>
+					<a href="item.html">
+						<div class="productImage"></div>
+					</a>
 				</div>
 				<div class="productItem">
-					<div class="productImage"></div>
+					<a href="item.html">
+						<div class="productImage"></div>
+					</a>
 				</div>
 				<div class="productItem">
-					<div class="productImage"></div>
+					<a href="item.html">
+						<div class="productImage"></div>
+					</a>
 				</div>
 				<div class="productItem">
-					<div class="productImage"></div>
+					<a href="item.html">
+						<div class="productImage"></div>
+					</a>
 				</div>
 				<div class="productItem">
-					<div class="productImage"></div>
+					<a href="item.html">
+						<div class="productImage"></div>
+					</a>
 				</div>
 				<div class="productItem">
-					<div class="productImage"></div>
+					<a href="item.html">
+						<div class="productImage"></div>
+					</a>
 				</div>
 				<div class="productItem">
-					<div class="productImage"></div>
+					<a href="item.html">
+						<div class="productImage"></div>
+					</a>
 				</div>
 				<div class="productItem">
-					<div class="productImage"></div>
+					<a href="item.html">
+						<div class="productImage"></div>
+					</a>
 				</div>
 			</div>
 		</div>
