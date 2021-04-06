@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/style/reset.css">
+    <link rel="stylesheet" href="/style/RegisterPage.css">
+</head>
+<body>
+    <header>
+        <div class="upperHeader">
+            <img
+                onclick="openSearch()"
+                id="searchIcon"
+                src="../icons/loupe.svg"
+                alt="search"
+            />
+            <img src="../icons/logo_white.png" alt="lele" />
+
+            <div class="login">
+                <p>Login</p>
+                <p>Register</p>
+            </div>
+        </div>
+
+        <div class="lowerHeader">
+            <a href="#">Home</a>
+            <a href="#">Categories</a>
+            <a href="#">About</a>
+            <a href="#">Stores</a>
+        </div>
+    </header>
+
+    <div id="myOverlay" class="overlay">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+            >×</span
+        >
+        <div class="overlay-content">
+            <form>
+                <input
+                    type="text"
+                    placeholder="Search Here..."
+                    name="search"
+                />
+                <button type="submit">
+                    <img src="../icons/loupe.svg" alt="search" />
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="c1">
+
+        <h2>Login</h2>
+
+        <div class="c2">    
+
+            <div class="title">
+                <p>Username :</p>
+                <p>Password :</p>
+            </div>
+
+            <div class="textboxes">
+                <p><input type="text" name="usernameText"><p>
+
+                <p><input type="password" name="passText"></p>
+
+                <p><a href="">Login</a></p>
+            </div>
+            
+        </div>
+</div>
+<script src="/src/search.js"></script> 
+</body>
+</html>

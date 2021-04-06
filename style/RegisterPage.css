@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+
+@font-face {
+	font-family: MADETOMMY;
+	src: url(../fonts/MADE\ TOMMY\ Medium.otf);
+}
+
+.c1{
+    margin-top: 2rem;
+    font-family: MADETOMMY;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c2{
+    margin-top: 2rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title{
+    font-family: MADETOMMY;
+    margin-right: 20px;
+    margin-top: 3px;
+}
+
+.title p{
+    margin-bottom: 1rem;
+}
+
+.textboxes a{
+    font-family: MADETOMMY;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 0.2rem 0.6rem;
+    
+}
+
+.textboxes p{
+    margin-bottom: 1rem;
+}
+
+.textboxes a:hover{
+    background-color:rgb(99, 99, 99);
+}
