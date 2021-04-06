@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+
+@font-face {
+	font-family: MADETOMMY;
+	src: url(../fonts/MADE\ TOMMY\ Medium.otf);
+}
+
+.subHead {
+	font-size: 50px;
+	font-family: MADETOMMY !important;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 20px;
+	overflow-x: hidden;
+}
+
+#menuLogo {
+	width: 30px;
+}
+
+.container {
+	display: grid;
+}
+
+.containerItem {
+	padding: 1rem;
+}
+
+#mid {
+	grid-template-columns: auto;
+	justify-content: center;
+}
+
+#productList {
+	grid-template-columns: auto auto auto auto;
+	justify-content: center;
+}
+
+.productItem {
+	height: fit-content;
+	display: flex;
+	padding: 10px;
+	width: min-content;
+}
+
+.productImage {
+	height: 200px;
+	width: 200px;
+	background-color: black;
+}
+
+.nav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(0, 0, 0);
+	opacity: 0.9;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.7s;
+}
+
+.nav a {
+	display: block;
+	padding: 20px 30px;
+	font-size: 25px;
+	text-decoration: none;
+	color: #ccc;
+}
+
+.nav a:hover {
+	color: #fff;
+	transition: 0.4s;
+}
+
+.nav .close {
+	position: absolute;
+	top: 0;
+	right: 22px;
+	margin-left: 50px;
+	font-size: 30px;
+}
+
+.slide a {
+	color: #000;
+	font-size: 36px;
+}
+
+#content {
+	padding: 20px;
+	transition: margin-left 0.7s;
+	overflow: hidden;
+	width: 100%;
+}
