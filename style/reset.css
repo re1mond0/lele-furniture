@@ -48,9 +48,9 @@ header {
 	justify-content: flex-end;
 }
 
-.login a {
+.login > a {
 	text-decoration: none;
-	color: white;
+	color: rgb(136, 136, 136);
 }
 
 .lowerHeader {
@@ -63,9 +63,15 @@ header {
 }
 
 .lowerHeader > a {
-	color: #fff;
+	color: rgb(136, 136, 136);
 	text-decoration: none;
 	font-family: MADETOMMY, "sans-serif";
+}
+
+.lowerHeader > a:hover,
+.login > a:hover {
+	color: rgb(255, 255, 255);
+	transition: 0.2s;
 }
 
 /* Search bar */
