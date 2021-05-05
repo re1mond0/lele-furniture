@@ -38,7 +38,7 @@ header {
 #searchIcon {
 	height: 2.5rem;
 	cursor: pointer;
-	width: 3rem;
+	width: 2.5rem;
 }
 
 .upperHeader .login {
@@ -99,6 +99,15 @@ header {
 	gap: 1rem;
 }
 
+.overlay-content > form > button > img {
+	height: 3rem;
+	width: 3rem;
+}
+
+.overlay-content > form > input {
+	text-decoration: none;
+}
+
 .overlay .closebtn {
 	position: absolute;
 	top: 20px;
@@ -119,7 +128,7 @@ header {
 	width: 100%;
 	color: #fff;
 	background: none;
-	text-decoration: underline;
+	text-decoration: none !important;
 }
 
 .overlay button {

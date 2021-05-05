@@ -1,18 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
 
-h2 {
+@font-face {
+	font-family: MADETOMMY;
+	src: url(../fonts/MADE\ TOMMY\ Medium.otf);
+}
+
+.subHead {
 	margin-top: 4rem;
 	margin-left: 7rem;
 	margin-bottom: 2rem;
 	font-size: 50px;
-	font-family: MADETOMMY, "sans-serif";
+	font-family: MADETOMMY;
 }
+
 .content-1 {
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: 7rem;
 	font-family: "Open Sans", sans-serif;
-	font-weight: bold;
 	font-size: 20px;
 }
 
