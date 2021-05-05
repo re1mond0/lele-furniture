@@ -1,0 +1,140 @@
+*,
+:root {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+
+@font-face {
+	font-family: MADETOMMY;
+	src: url(../fonts/MADE\ TOMMY\ Medium.otf);
+}
+
+header {
+	background: #333;
+	color: #fff;
+	padding: 1rem 2rem;
+}
+
+.upperHeader {
+	display: grid;
+	grid-template-columns: 10rem auto 10rem;
+}
+
+.mainLogo {
+	display: flex;
+	justify-content: center;
+}
+
+.mainLogo > img {
+	color: #fff;
+	max-width: 100%;
+	height: 4rem;
+	fill: white;
+}
+
+#searchIcon {
+	height: 2.5rem;
+	cursor: pointer;
+	width: 2.5rem;
+}
+
+.upperHeader .login {
+	display: flex;
+	gap: 2rem;
+	font-family: MADETOMMY, "sans-serif";
+	justify-content: flex-end;
+}
+
+.login > a {
+	text-decoration: none;
+	color: rgb(136, 136, 136);
+}
+
+.lowerHeader {
+	display: flex;
+	margin-top: 2rem;
+	justify-content: center;
+	gap: 3rem;
+	font-size: 1.25rem;
+	flex-wrap: wrap;
+}
+
+.lowerHeader > a {
+	color: rgb(136, 136, 136);
+	text-decoration: none;
+	font-family: MADETOMMY, "sans-serif";
+}
+
+.lowerHeader > a:hover,
+.login > a:hover {
+	color: rgb(255, 255, 255);
+	transition: 0.2s;
+}
+
+/* Search bar */
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	display: none;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(0, 0, 0);
+}
+
+.overlay-content {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.overlay-content > form {
+	display: flex;
+	gap: 1rem;
+}
+
+.overlay-content > form > button > img {
+	height: 3rem;
+	width: 3rem;
+}
+
+.overlay-content > form > input {
+	text-decoration: none;
+}
+
+.overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+	cursor: pointer;
+	color: white;
+}
+
+.overlay .closebtn:hover {
+	color: #ccc;
+}
+
+.overlay input[type="text"] {
+	padding: 15px;
+	font-size: 17px;
+	border: none;
+	width: 100%;
+	color: #fff;
+	background: none;
+	text-decoration: none !important;
+}
+
+.overlay button {
+	width: 20%;
+	background: none;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+}

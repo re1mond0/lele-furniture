@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			defer
+			src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+		></script>
+		<link rel="stylesheet" href="../style/reset.css" />
+		<link rel="stylesheet" href="../style/product.css" />
+		<title>Lele Products</title>
+	</head>
+
+	<body>
+		<header>
+			<div class="upperHeader">
+				<img
+					onclick="openSearch()"
+					id="searchIcon"
+					src="../icons/search.png"
+					alt="search"
+				/>
+				<div class="mainLogo">
+					<img src="../icons/logo_white.png" alt="lele" />
+				</div>
+
+				<div class="login">
+					<a href="login.html">Login</a>
+					<a href="register.html">Register</a>
+				</div>
+			</div>
+
+			<div class="lowerHeader">
+				<a href="home.html">Home</a>
+				<a href="product.html">Products</a>
+				<a href="about.html">About</a>
+				<a href="stores.html">Stores</a>
+			</div>
+		</header>
+
+		<div id="myOverlay" class="overlay">
+			<span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+				>×</span
+			>
+			<div class="overlay-content">
+				<form>
+					<input
+						type="text"
+						placeholder="Search Here..."
+						name="search"
+					/>
+					<button type="submit">
+						<img src="../icons/search.png" alt="search" />
+					</button>
+				</form>
+			</div>
+		</div>
+
+		<div id="content">
+			<span class="slide">
+				<a href="#" onclick="openSlideMenu()">
+					<i id="barsLogo" class="fas fa-bars"></i>
+				</a>
+
+				<span id="mid" class="container">
+					<span class="subHead containerItem"> Products </span>
+					<div class="containerItem">
+						<label>Sort: </label>
+						<select id="sortBy">
+							<option>Most relevant</option>
+							<option>Price: High to Low</option>
+							<option>Price: Low to High</option>
+						</select>
+					</div>
+				</span>
+			</span>
+
+			<div id="menu" class="nav">
+				<a href="#" class="close" onclick="closeSlideMenu()">
+					<i class="fas fa-times"></i>
+				</a>
+				<a href="#">Tables</a>
+				<a href="#">Chairs</a>
+				<a href="#">Beds</a>
+				<a href="#">Drawers</a>
+				<a href="#">Mirrors</a>
+			</div>
+
+			<div id="productList" class="container">
+				<div class="productItem">
+					<a href="item.html">
+						<div class="productImage"></div>
+					</a>
+				</div>
+				<div class="productItem">
+					<a href="item.html">
+						<div class="productImage"></div>
+					</a>
+				</div>
+				<div class="productItem">
+					<a href="item.html">
+						<div class="productImage"></div>
+					</a>
+				</div>
+				<div class="productItem">
+					<a href="item.html">
+						<div class="productImage"></div>
+					</a>
+				</div>
+				<div class="productItem">
+					<a href="item.html">
+						<div class="productImage"></div>
+					</a>
+				</div>
+				<div class="productItem">
+					<a href="item.html">
+						<div class="productImage"></div>
+					</a>
+				</div>
+				<div class="productItem">
+					<a href="item.html">
+						<div class="productImage"></div>
+					</a>
+				</div>
+				<div class="productItem">
+					<a href="item.html">
+						<div class="productImage"></div>
+					</a>
+				</div>
+				<div class="productItem">
+					<a href="item.html">
+						<div class="productImage"></div>
+					</a>
+				</div>
+				<div class="productItem">
+					<a href="item.html">
+						<div class="productImage"></div>
+					</a>
+				</div>
+				<div class="productItem">
+					<a href="item.html">
+						<div class="productImage"></div>
+					</a>
+				</div>
+				<div class="productItem">
+					<a href="item.html">
+						<div class="productImage"></div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<script src="../src/productPage.js"></script>
+		<script src="../src/search.js"></script>
+	</body>
+</html>

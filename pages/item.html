@@ -1,0 +1,88 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../style/reset.css" />
+		<link rel="stylesheet" href="../style/item.css" />
+		<title>Document</title>
+	</head>
+
+	<body>
+		<header>
+			<div class="upperHeader">
+				<img
+					onclick="openSearch()"
+					id="searchIcon"
+					src="../icons/search.png"
+					alt="search"
+				/>
+				<div class="mainLogo">
+					<img src="../icons/logo_white.png" alt="lele" />
+				</div>
+
+				<div class="login">
+					<a href="login.html">Login</a>
+					<a href="register.html">Register</a>
+				</div>
+			</div>
+
+			<div class="lowerHeader">
+				<a href="home.html">Home</a>
+				<a href="product.html">Products</a>
+				<a href="about.html">About</a>
+				<a href="stores.html">Stores</a>
+			</div>
+		</header>
+
+		<div id="myOverlay" class="overlay">
+			<span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+				>×</span
+			>
+			<div class="overlay-content">
+				<form>
+					<input
+						type="text"
+						placeholder="Search Here..."
+						name="search"
+					/>
+					<button type="submit">
+						<img src="../icons/search.png" alt="search" />
+					</button>
+				</form>
+			</div>
+		</div>
+
+		<div id="content">
+			<div class="container">
+				<div>
+					<div class="mainBox"></div>
+				</div>
+
+				<div class="rightColumn container">
+					<div class="text">
+						<h1>Titanium Dining Table</h1>
+						<h1>Rp 11.250.000</h1>
+						<br />
+						<div>
+							<p>
+								Lorem ipsum dolor sit amet consectetur,
+								adipisicing elit. Rerum ipsam quisquam minima
+								quos voluptate mollitia officiis quod porro
+								aspernatur atque? Unde dolores esse nihil
+								dolorum obcaecati, sit sapiente accusamus iure?
+							</p>
+						</div>
+					</div>
+
+					<div class="previewBoxes">
+						<div class="smallBox"></div>
+						<div class="smallBox"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="../src/search.js"></script>
+	</body>
+</html>
