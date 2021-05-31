@@ -7,7 +7,8 @@ body {
 
 .thumbnail {
 	background: rgb(0, 0, 0);
-	/* will change depends on the content */
+	background-image: url('../pictures/main banner.png');
+	background-repeat: no-repeat;
 	height: 20rem;
 }
 
