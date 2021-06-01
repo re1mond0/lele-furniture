@@ -7,7 +7,7 @@ body {
 
 .thumbnail {
   background: rgb(0, 0, 0);
-  background-image: url("../pictures/main banner.png");
+  background-image: url("../pictures/main banner v2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -31,9 +31,18 @@ body {
 
 .highlight1 > h2,
 .highlight2 > h2 {
-  text-transform: capitalize;
   font-family: "Open Sans", sans-serif;
+  font-size: 17px;
   line-height: 1.5;
+}
+
+h2 > span {
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.highlight2 > h2 {
+  text-align: right;
 }
 
 .box1,
@@ -44,10 +53,39 @@ body {
   /* background: rgb(0, 0, 0); */
 }
 
-/* .box1 {
+.box1 {
   background-image: url("../pictures/aotd.jpg");
   background-size: cover;
-} */
+}
+
+.box2 {
+  background-image: url("../pictures/potd.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.subhead {
+  padding-top: 10px;
+  font-family: MADETOMMY, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.chairThumb {
+  background-image: url("../pictures/chairThumb.jpg");
+}
+
+.tableThumb {
+  background-image: url("../pictures/tableThumb.jpg");
+}
+
+.sofaThumb {
+  background-image: url("../pictures/sofaThumb.jpg");
+}
+
+.drawerThumb {
+  background-image: url("../pictures/drawerThumb.jpg");
+}
 
 .product {
   margin-top: 2rem;
@@ -58,9 +96,10 @@ body {
 }
 
 .product > div {
-  height: 10rem;
+  height: 16rem;
   width: 45%;
   /* background-color: rgb(0, 0, 0); */
+  background-size: contain;
 }
 
 .overlay {
