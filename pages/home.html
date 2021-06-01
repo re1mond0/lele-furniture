@@ -1,89 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../style/reset.css" />
-		<link rel="stylesheet" href="../style/home.css" />
-		<title>Document</title>
-	</head>
-	<body>
-		<header>
-			<div class="upperHeader">
-				<img
-					onclick="openSearch()"
-					id="searchIcon"
-					src="../icons/search.png"
-					alt="search"
-				/>
-				<div class="mainLogo">
-					<img src="../icons/logo_white.png" alt="lele" />
-				</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="stylesheet" href="../style/home.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="upperHeader">
+        <img
+          onclick="openSearch()"
+          id="searchIcon"
+          src="../icons/search.png"
+          alt="search"
+        />
+        <div class="mainLogo">
+          <img src="../icons/logo_white.png" alt="lele" />
+        </div>
 
-				<div class="login">
-					<a href="login.html">Login</a>
-					<a href="register.html">Register</a>
-				</div>
-			</div>
+        <div class="login">
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+        </div>
+      </div>
 
-			<div class="lowerHeader">
-				<a href="home.html">Home</a>
-				<a href="product.html">Products</a>
-				<a href="about.html">About</a>
-				<a href="stores.html">Stores</a>
-			</div>
-		</header>
+      <div class="lowerHeader">
+        <a href="home.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="stores.html">Stores</a>
+      </div>
+    </header>
 
-		<div id="myOverlay" class="overlay">
-			<span class="closebtn" onclick="closeSearch()" title="Close Overlay"
-				>×</span
-			>
-			<div class="overlay-content">
-				<form>
-					<input
-						type="text"
-						placeholder="Search Here..."
-						name="search"
-					/>
-					<button type="submit">
-						<img src="../icons/search.png" alt="search" />
-					</button>
-				</form>
-			</div>
-		</div>
+    <div id="myOverlay" class="overlay">
+      <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+        >×</span
+      >
+      <div class="overlay-content">
+        <form>
+          <input type="text" placeholder="Search Here..." name="search" />
+          <button type="submit">
+            <img src="../icons/search.png" alt="search" />
+          </button>
+        </form>
+      </div>
+    </div>
 
-		<div class="content">
-			<div class="thumbnail">
-				<!-- <img src="../pictures/main banner.png" alt="lele" /> -->
-			</div>
+    <div class="content">
+      <div class="thumbnail">
+        <!-- <img src="../pictures/main banner.png" alt="lele" /> -->
+      </div>
 
-			<div class="highlight">
-				<div class="highlight1">
-					<div class="box1"></div>
-					<h2>
-						Aesthetics Of the day dipisicing elit. Praesentium,
-						ullam?
-					</h2>
-				</div>
+      <div class="highlight">
+        <div class="highlight1">
+          <div class="box1">
+            <img
+              style="
+                height: 100%;
+                width: 100%;
+                max-width: 100%;
+                object-position: center;
+              "
+              src="../pictures/aotd.jpg"
+              alt=""
+            />
+          </div>
+          <h2>Aesthetics Of the day!</h2>
+        </div>
 
-				<div class="highlight2">
-					<h2>
-						Product of the day! Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Quibusdam
-					</h2>
-					<div class="box2"></div>
-				</div>
-			</div>
+        <div class="highlight2">
+          <h2>Product of the day!</h2>
+          <div class="box2">
+            <img
+              style="height: 100%; width: 100%"
+              src="../pictures/potd.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
 
-			<div class="product">
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-		</div>
+      <div class="product">
+        <div>
+          <img
+            style="height: 100%; width: 100%; max-width: 100%"
+            src="../pictures/chairThumb.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            style="height: 100%; width: 100%; max-width: 100%"
+            src="../pictures/drawerThumb.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            style="height: 100%; width: 100%; max-width: 100%"
+            src="../pictures/sofaThumb.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            style="height: 100%; width: 100%; max-width: 100%"
+            src="../pictures/tableThumb.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
 
-		<script src="../src/search.js"></script>
-	</body>
+    <script src="../src/search.js"></script>
+  </body>
 </html>
