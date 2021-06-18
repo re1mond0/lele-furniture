@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'MADE TOMMY', sans-serif;
+}
+footer{
+    background-color: #333;
+}
+.foot{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+}
+#logo-footer{
+    width: 100px;
+}
+#menu-footer{
+    color: #E5E5E5;
+}
+
+#menu-footer a{
+    text-decoration: none;
+    color: #E5E5E5;
+}
+#menu-footer ul li{
+    list-style: none;
+    font-size: 13px;
+    /* padding-top: 0.5rem; */
+    line-height: 2;
+}
+
+#product-footer{
+    padding-bottom: 3.1rem;
+}
+#product-footer a{
+    list-style: none;
+    text-decoration: none;
+    color: #E5E5E5;
+}
+#product-footer ul li{
+    font-size: 13px;
+    /* padding-top: 0.5rem; */
+    line-height: 2;
+}
+
+#follow-footer{
+    color: #E5E5E5;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+#follow-footer h2{
+    /* padding-bottom: 6rem; */
+}
+#follow-footer a{
+    font-size: 20px;
+    padding-top: 0.5rem; 
+    color: #E5E5E5;
+}
+#follow-footer-img{
+    display: flex;
+    justify-content: space-around;
+}
+#copyright-lele{
+    text-align: center;
+}
