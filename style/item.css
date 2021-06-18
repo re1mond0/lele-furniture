@@ -18,7 +18,8 @@ body {
 .mainBox {
   width: 450px;
   height: 450px;
-  background-color: black;
+  /* background-color: black; */
+  background-image: url("../pictures/sculpture.jfif");
 }
 
 .text {
