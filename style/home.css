@@ -165,12 +165,12 @@ h2 > span {
   padding-right: 1.5rem;
 }
 
-.product > div img {
+.product > div {
   border-radius: 0.5rem;
   transition: transform 0.5s ease;
 }
 
-.product div:hover img {
+.product > div:hover {
   transform: scale(1.15);
 }
 

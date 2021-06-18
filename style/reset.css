@@ -153,7 +153,6 @@ body {
 }
 
 .overlay button {
-  width: 20%;
   background: none;
   font-size: 17px;
   border: none;
@@ -176,8 +175,9 @@ body {
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
-/* Add a red background color to navbar links on hover */
-
+.dropbtn:hover {
+  cursor: pointer;
+}
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   margin-top: 1rem;
