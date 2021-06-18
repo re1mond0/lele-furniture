@@ -1,52 +1,109 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+/* font-family: MADETOMMY, sans-serif;
+  font-family: "Open Sans", sans-serif; */
 
 @font-face {
-	font-family: MADETOMMY;
-	src: url(../fonts/MADE\ TOMMY\ Medium.otf);
+  font-family: MADETOMMY;
+  src: url(../fonts/MADE\ TOMMY\ Medium.otf);
 }
 
-.c1 {
-	margin-top: 2rem;
-	font-family: MADETOMMY;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+body {
+  background-image: url("../pictures/background.png") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  background-position: fixed;
+  font-family: "Open Sans", sans-serif;
 }
 
-.c2 {
-	margin-top: 2rem;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+.subhead,
+#signinBtn {
+  font-family: MADETOMMY, sans-serif !important;
 }
 
-.title {
-	font-family: "Open Sans", sans-serif;
-	font-size: 20px;
-	margin-right: 2rem;
-	margin-top: 3px;
+#sessionContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem !important;
+  margin: auto auto;
+  padding: 3rem;
+  max-width: 300px;
+  background-color: white;
+  border-radius: 30px;
+  filter: drop-shadow(0rem 0rem 3rem rgba(0, 0, 0, 0.438));
 }
 
-.title p {
-	margin-bottom: 1rem;
+#sessionContainer > span,
+#sessionContainer > input {
+  margin-bottom: 1rem;
 }
 
-.textboxes {
-	padding-top: 0.6rem;
+#sessionContainer > label {
+  font-size: 15px;
+  color: #333;
 }
 
-.textboxes a {
-	font-family: MADETOMMY;
-	text-decoration: none;
-	color: white;
-	background-color: black;
-	padding: 0.2rem 0.6rem;
+#sessionContainer .subhead {
+  text-align: center;
+  font-size: 30px;
 }
 
-.textboxes p {
-	margin-bottom: 1.4rem;
+.smallText {
+  font-size: 15px;
 }
 
-.textboxes a:hover {
-	background-color: rgb(46, 46, 46);
+#forgot {
+  font-size: 10px;
+  margin-top: -0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #af3737;
+  transition: 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #ff5050;
+}
+
+#signinBtn {
+  align-self: center;
+  margin-top: 1rem;
+  width: 300px;
+  height: 50px;
+}
+
+#nameIn:focus,
+#passIn:focus {
+  outline: none;
+}
+
+#signinBtn {
+  transition: 0.2s ease-in-out;
+  background-color: #ff5050;
+  color: white;
+  border: none;
+  padding: 0;
+}
+
+#signinBtn:hover {
+  border: 2px solid #ff5050;
+  background-color: white;
+  color: #ff5050;
+}
+
+input {
+  margin-top: 0.5rem;
+  border: 0;
+  font-size: 18px;
+  padding: 10px;
+  border: 2px solid rgba(197, 197, 197, 0.548);
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: #ff5050;
+  filter: drop-shadow(0rem 0rem 3px #ff5050);
 }

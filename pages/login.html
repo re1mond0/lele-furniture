@@ -2,78 +2,35 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Login Page</title>
-		<link rel="stylesheet" href="/style/reset.css" />
-		<link rel="stylesheet" href="/style/login-register.css" />
+		<title>Sign-In</title>
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://kit.fontawesome.com/c0f7e988b7.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="../stylesreset.css" />
+		<link id="theme" rel="stylesheet" href="../style/login-register.css" />
+		
 	</head>
 	<body>
-		<header>
-			<div class="upperHeader">
-				<img
-					onclick="openSearch()"
-					id="searchIcon"
-					src="../icons/search.png"
-					alt="search"
-				/>
-				<div class="mainLogo">
-					<img src="../icons/white_fish.png" alt="lele" />
-				</div>
-
-				<div class="login">
-					<a href="login.html">Login</a>
-					<a href="register.html">Register</a>
-				</div>
-			</div>
-
-			<div class="lowerHeader">
-				<a href="home.html">Home</a>
-				<a href="product.html">Products</a>
-				<a href="about.html">About</a>
-				<a href="stores.html">Stores</a>
-			</div>
-		</header>
-
-		<div id="myOverlay" class="overlay">
-			<span class="closebtn" onclick="closeSearch()" title="Close Overlay"
-				>×</span
-			>
-			<div class="overlay-content">
-				<form>
-					<input
-						type="text"
-						placeholder="Search Here..."
-						name="search"
-					/>
-					<button type="submit">
-						<img src="../icons/search.png" alt="search" />
-					</button>
-				</form>
-			</div>
+		<div id="sessionContainer">
+			<span class="subhead">Login</span>
+			<span class="smallText">
+				New to To-Do-List?
+				<a href="register.html">Sign-up for free!</a>
+			</span>
+			<label>Username</label>
+			<input type="text" id="nameIn" autocomplete="off">	
+			<label>Password</label>
+			<input type="password" id="nameIn" autocomplete="off">
+			<a id="forgot">Forgot Password?</a>
+			<button id="signinBtn">Sign-in</button>
 		</div>
 
-		<div class="c1">
-			<h2>Login</h2>
-
-			<div class="c2">
-				<div class="title">
-					<p>Username :</p>
-					<p>Password :</p>
-				</div>
-
-				<div class="textboxes">
-					<p>
-						<input type="text" name="usernameText" />
-						<p></p>
-
-						<p><input type="password" name="passText" /></p>
-					</p>
-
-					<p><a href="">Login</a></p>
-				</div>
-			</div>
-		</div>
-		<script src="/src/search.js"></script>
+		<script src="../src/clock.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</body>
 </html>
