@@ -6,30 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/reset.css" />
     <link rel="stylesheet" href="../style/home.css" />
-    <script src="https://kit.fontawesome.com/c0f7e988b7.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/c0f7e988b7.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Home</title>
   </head>
   <body>
     <header>
       <div class="upperHeader">
-        <i class="fa fa-search fa-lg" onclick="openSearch()"
-        id="searchIcon"></i>
+        <i
+          class="fa fa-search fa-lg"
+          onclick="openSearch()"
+          id="searchIcon"
+        ></i>
         <div class="mainLogo">
           <img src="../icons/logo_white.png" alt="lele" />
         </div>
 
         <div class="login">
-          <a href="login.html">Login 
+          <a href="login.html"
+            >Login
             <i class="fas fa-sign-in-alt"></i>
           </a>
-          
         </div>
       </div>
 
       <div class="lowerHeader">
         <a href="home.html">Home</a>
         <div class="dropdown">
-          <button class="dropbtn" onclick="location.href = 'product.html'">Products
+          <button class="dropbtn" onclick="location.href = 'product.html'">
+            Products
           </button>
           <div class="dropdown-content">
             <label>Categories</label>
@@ -49,7 +56,12 @@
       >
       <div class="overlay-content">
         <form>
-          <input type="text" placeholder="Search Here..." name="search" autocomplete="off"/>
+          <input
+            type="text"
+            placeholder="Search Here..."
+            name="search"
+            autocomplete="off"
+          />
           <button type="submit">
             <img src="../icons/search.png" alt="search" />
           </button>
@@ -64,34 +76,67 @@
 
       <div class="highlight">
         <div class="highlight1">
-          <div class="box1">
+          <div class="box1"></div>
+          <div class="textContainer">
+            <h2>Aesthetics Of The Day</h2>
+            <p>Modern with a funky touch!</p>
+            <p class="price">Rp. 821.000</p>
           </div>
-          <h2>Aesthetics Of The Day
-            <br/>
-            <span>Modern with a funky touch!</span>
-          </h2>
         </div>
 
         <div class="highlight2">
-          <h2>Hippo Couch
-            <br/>
-           <span>A deadly combo of cute and comfort!</span>
-           <br/><br/><br/><br/><br/><br/>
-           Rp. 7,999,000
-          </h2>
-          <div class="box2">
+          <div class="textContainer">
+            <h2>Hippo Couch</h2>
+            <p>A deadly combo of cute and comfort!</p>
+            <p class="price">Rp. 821.000</p>
           </div>
+          <div class="box2"></div>
         </div>
       </div>
-      <div class="subhead">Shop Lele</div>
+
+      <div class="textThumbnail">
+        <h3>
+          At Lele Furniture, we want you to do great things. That’s why we make
+          problem-solving designs that are as beautiful as they are useful.
+        </h3>
+      </div>
+
+      <div class="subhead">Explore Our Products</div>
       <div class="product">
         <div class="chairThumb"></div>
         <div class="tableThumb"></div>
         <div class="sofaThumb"></div>
         <div class="drawerThumb"></div>
       </div>
-    </div>
 
+      <div class="textThumbnail">
+        <h2 style="display: inline">
+          Kenyamanan anda adalah
+          <span style="text-decoration: underline">prioritas</span> kami.
+        </h2>
+
+        <div class="icon">
+          <div>
+            <i class="fas fa-mobile"></i>
+            <p style="font-size: 1rem">Order</p>
+          </div>
+          <i class="fas fa-arrow-circle-right"></i>
+          <div>
+            <i class="fas fa-truck" style="color: rgb(96, 96, 212)"></i>
+            <p style="font-size: 1rem">Wait at home</p>
+          </div>
+          <i class="fas fa-arrow-circle-right"></i>
+          <div>
+            <i class="fas fa-box-open" style="color: rgb(180, 84, 84)"></i>
+            <p style="font-size: 1rem">Unpack your furniture!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/c0f7e988b7.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="../src/search.js"></script>
   </body>
 </html>
