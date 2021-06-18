@@ -17,14 +17,15 @@ body {
 }
 
 .subhead,
-#signinBtn {
+#signinBtn,
+#altBtn {
   font-family: MADETOMMY, sans-serif !important;
 }
 
 #sessionContainer {
   display: flex;
   flex-direction: column;
-  margin-top: 6rem !important;
+  margin-top: 5rem !important;
   margin: auto auto;
   padding: 3rem;
   max-width: 300px;
@@ -52,6 +53,13 @@ body {
   font-size: 15px;
 }
 
+.tinyText {
+  font-size: 10px;
+  color: rgb(155, 155, 155);
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
 #forgot {
   font-size: 13px;
   margin-top: -0.5rem;
@@ -67,7 +75,8 @@ a:hover {
   color: #ff5050;
 }
 
-#signinBtn {
+#signinBtn,
+#altBtn {
   align-self: center;
   margin-top: 1rem;
   width: 300px;
@@ -92,6 +101,21 @@ a:hover {
   border: 2px solid #ff5050;
   background-color: white;
   color: #ff5050;
+}
+
+#altBtn {
+  transition: 0.2s ease-in-out;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0;
+  border-radius: 5px;
+}
+
+#altBtn:hover {
+  border: 2px solid #333;
+  background-color: white;
+  color: #333;
 }
 
 input {

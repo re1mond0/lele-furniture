@@ -76,18 +76,22 @@ h2 > span {
 
 .chairThumb {
   background-image: url("../pictures/chairThumb.jpg");
+  background-repeat: no-repeat;
 }
 
 .tableThumb {
   background-image: url("../pictures/tableThumb.jpg");
+  background-repeat: no-repeat;
 }
 
 .sofaThumb {
   background-image: url("../pictures/sofaThumb.jpg");
+  background-repeat: no-repeat;
 }
 
 .drawerThumb {
   background-image: url("../pictures/drawerThumb.jpg");
+  background-repeat: no-repeat;
 }
 
 .product {

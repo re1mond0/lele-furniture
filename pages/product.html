@@ -60,26 +60,32 @@
 
 		<div id="content">
 			<span class="slide">
-				<a href="#" onclick="openSlideMenu()">
-					<i id="barsLogo" fill="white" class="fas fa-bars" color="white"></i>
+				<a href="javascript:void()" onclick="openSlideMenu()">
+					<i id="barsLogo" class="fas fa-angle-double-right"></i>
 				</a>
 
 				<span id="mid" class="container">
 					<span class="subHead containerItem"> Products </span>
-					<div class="containerItem">
-						<label>Sort: </label>
-						<select id="sortBy">
-							<option>Most relevant</option>
-							<option>Price: High to Low</option>
-							<option>Price: Low to High</option>
-						</select>
+					<div id = "selector">
+						<div class="select" tabindex="1">
+							<input class="selectopt" name="test" type="radio" id="opt1" checked>
+							<label for="opt1" class="option">Sort by</label>
+							<input class="selectopt" name="test" type="radio" id="opt1">
+							<label for="opt1" class="option">Price (High - Low)</label>
+							<input class="selectopt" name="test" type="radio" id="opt2">
+							<label for="opt2" class="option">Price (Low - High)</label>
+							<input class="selectopt" name="test" type="radio" id="opt3">
+							<label for="opt3" class="option">Relevance</label>
+							<input class="selectopt" name="test" type="radio" id="opt4">
+							<label for="opt4" class="option">Newest Realeases</label>
+						</div>
 					</div>
 				</span>
 			</span>
 
 			<div id="menu" class="nav">
-				<a href="#" class="close" onclick="closeSlideMenu()">
-					<i class="fas fa-times"></i>
+				<a href="javascript:void()" class="close" onclick="closeSlideMenu()">
+					<i class="fas fa-angle-double-left"></i>
 				</a>
 				<a href="#">Tables</a>
 				<a href="#">Chairs</a>
@@ -91,67 +97,111 @@
 			<div id="productList" class="container">
 				<div class="productItem">
 					<a href="item.html">
-						<div class="productImage"></div>
+						<div class="productImage">
+							<img src="../testImage.jpg">
+						</div>
 					</a>
+					<div class="prodName">Product Name</div>
+					<div class="prodPrice">Rp. 15,000.00</div>
 				</div>
 				<div class="productItem">
 					<a href="item.html">
-						<div class="productImage"></div>
+						<div class="productImage">
+							<img src="../testImage.jpg">
+						</div>
 					</a>
+					<div class="prodName">Product Name</div>
+					<div class="prodPrice">Rp. 15,000.00</div>
 				</div>
 				<div class="productItem">
 					<a href="item.html">
-						<div class="productImage"></div>
+						<div class="productImage">
+							<img src="../testImage.jpg">
+						</div>
 					</a>
+					<div class="prodName">Product Name</div>
+					<div class="prodPrice">Rp. 15,000.00</div>
 				</div>
 				<div class="productItem">
 					<a href="item.html">
-						<div class="productImage"></div>
+						<div class="productImage">
+							<img src="../testImage.jpg">
+						</div>
 					</a>
+					<div class="prodName">Product Name</div>
+					<div class="prodPrice">Rp. 15,000.00</div>
 				</div>
 				<div class="productItem">
 					<a href="item.html">
-						<div class="productImage"></div>
+						<div class="productImage">
+							<img src="../testImage.jpg">
+						</div>
 					</a>
+					<div class="prodName">Product Name</div>
+					<div class="prodPrice">Rp. 15,000.00</div>
 				</div>
 				<div class="productItem">
 					<a href="item.html">
-						<div class="productImage"></div>
+						<div class="productImage">
+							<img src="../testImage.jpg">
+						</div>
 					</a>
+					<div class="prodName">Product Name</div>
+					<div class="prodPrice">Rp. 15,000.00</div>
 				</div>
 				<div class="productItem">
 					<a href="item.html">
-						<div class="productImage"></div>
+						<div class="productImage">
+							<img src="../testImage.jpg">
+						</div>
 					</a>
+					<div class="prodName">Product Name</div>
+					<div class="prodPrice">Rp. 15,000.00</div>
 				</div>
 				<div class="productItem">
 					<a href="item.html">
-						<div class="productImage"></div>
+						<div class="productImage">
+							<img src="../testImage.jpg">
+						</div>
 					</a>
+					<div class="prodName">Product Name</div>
+					<div class="prodPrice">Rp. 15,000.00</div>
 				</div>
 				<div class="productItem">
 					<a href="item.html">
-						<div class="productImage"></div>
+						<div class="productImage">
+							<img src="../testImage.jpg">
+						</div>
 					</a>
+					<div class="prodName">Product Name</div>
+					<div class="prodPrice">Rp. 15,000.00</div>
 				</div>
 				<div class="productItem">
 					<a href="item.html">
-						<div class="productImage"></div>
+						<div class="productImage">
+							<img src="../testImage.jpg">
+						</div>
 					</a>
-				</div>
-				<div class="productItem">
-					<a href="item.html">
-						<div class="productImage"></div>
-					</a>
-				</div>
-				<div class="productItem">
-					<a href="item.html">
-						<div class="productImage"></div>
-					</a>
+					<div class="prodName">Product Name</div>
+					<div class="prodPrice">Rp. 15,000.00</div>
 				</div>
 			</div>
 		</div>
-
+		<div id="content2">
+			<div id="content2Text">
+				<h2>Quality materials +<br/>Cutting-edge design</h2>
+				<br/>
+				<h3>Here are some of our handpicked flagship products this season. Created through years
+					of innovation and experience. We produce the best of the best furniture, with no corners
+					cut.
+				</h3>
+			</div>
+			<div id="content2Images">
+				<div class="content2img"></div>
+				<div class="content2img"></div>
+				<div class="content2img"></div>
+			</div>
+		</div>
 		<script src="../src/productPage.js"></script>
 		<script src="../src/search.js"></script>
 	</body>
