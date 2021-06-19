@@ -52,15 +52,17 @@ label {
 }
 
 #productList > div > i {
-  color: rgb(163, 163, 163);
+  color: #ff5050;
   transition: 0.2s ease-in-out;
   position: absolute;
   font-size: 30px;
-  margin: 10px 0 0 260px;
+  z-index: 1;
+  cursor: pointer;
+  margin: 10px 0 0 10px;
 }
 
 #productList > div > i:hover {
-  color: #ff5050;
+  color: #a11f1f;
 }
 
 .prodName {
