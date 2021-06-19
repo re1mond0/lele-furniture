@@ -1,103 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Contact Us</title>
-		<link rel="stylesheet" href="../style/reset.css" />
-		<link rel="stylesheet" href="../style/stores.css" />
-		<script
-		src="https://kit.fontawesome.com/c0f7e988b7.js"
-		crossorigin="anonymous"
-		></script>
-	</head>
-	<body>
-		<header>
-			<div class="upperHeader">
-			  <i
-				class="fa fa-search fa-lg"
-				onclick="openSearch()"
-				id="searchIcon"
-			  ></i>
-			  <div class="mainLogo">
-				<img src="../icons/logo_white.png" alt="lele" 
-				onclick="location.href = 'home.html'"/>
-			  </div>
-	  
-			  <div class="login">
-				<a href="login.html"
-				  >Login
-				  <i class="fas fa-sign-in-alt"></i>
-				</a>
-			  </div>
-			</div>
-	  
-			<div class="lowerHeader">
-			  <a href="home.html">Home</a>
-			  <div class="dropdown">
-				<button class="dropbtn" onclick="location.href = 'product.html'">
-				  Products
-				</button>
-				<div class="dropdown-content">
-				  <label>Categories</label>
-				  <a href="#">Chairs</a>
-				  <a href="#">Tables</a>
-				  <a href="#">Sofas</a>
-				  <a href="#">Drawers</a>
-				</div>
-			  </div>
-			  <a href="about.html">About</a>
-			  <a href="stores.html">Contact us</a>
-			</div>
-		  </header>
-	  
-		  <div id="myOverlay" class="overlay">
-			<span class="closebtn" onclick="closeSearch()" title="Close Overlay"
-			  >×</span
-			>
-			<div class="overlay-content">
-			  <div class="searchContainer">
-				<input
-				  type="text"
-				  placeholder="Search Here..."
-				  name="search"
-				  autocomplete="off"
-				/>
-				<button type="submit">
-				  <i
-				  class="fa fa-search fa-lg"
-				  id="searchIcon"
-				  onclick="location.href = 'searchResults.html'"
-				  ></i>
-				</button>
-			  </div>
-			</div>
-		  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stores Page</title>
+    <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="stylesheet" href="../style/stores.css" />
+  </head>
+  <body>
+    <header>
+      <div class="upperHeader">
+        <img
+          onclick="openSearch()"
+          id="searchIcon"
+          src="../icons/search.png"
+          alt="search"
+        />
+        <div class="mainLogo">
+          <img src="../icons/logo_white.png" alt="lele" />
+        </div>
 
-		<div class="subHead">Check out our stores!</div>
+        <div class="login">
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+        </div>
+      </div>
 
-		<div class="content-1">
-			<div class="info-store">
-				<h3>Lele Furnitures Jakarta</h3>
-				<h5>Dimanapun engkau berada</h5>
-				<h5>leleOfficialJKT@lele.org</h5>
-				<h5>0212342088</h5>
-			</div>
-			<div class="info-store">
-				<h3>Lele Furnitures Bandung</h3>
-				<h5>Di hati mu</h5>
-				<h5>leleOfficialBDG@lele.org</h5>
-				<h5>0212342089</h5>
-			</div>
-			<div class="info-store">
-				<h3>Lele Furnitures Bogor</h3>
-				<h5>Di lapangan bola gelora bung karno</h5>
-				<h5>leleOfficialBGR@lele.org</h5>
-				<h5>0212342090</h5>
-			</div>
-		</div>
+      <div class="lowerHeader">
+        <a href="home.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="stores.html">Stores</a>
+      </div>
+    </header>
 
-		<script src="../src/search.js"></script>
-	</body>
+    <div id="myOverlay" class="overlay">
+      <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+        >×</span
+      >
+      <div class="overlay-content">
+        <form>
+          <input type="text" placeholder="Search Here..." name="search" />
+          <button type="submit">
+            <img src="../icons/search.png" alt="search" />
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="containerBox">
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close"></span>
+          <i class="fas fa-check"></i>
+          <h2>Thank You!</h2>
+          <h3>Your message has been successfully sent.</h3>
+          <h3>We will contact you very soon!</h3>
+        </div>
+      </div>
+
+      <div class="subHead">Check out our stores!</div>
+
+      <div class="content-1">
+        <div class="info-store">
+          <h3>Lele Furnitures Jakarta</h3>
+          <h5>Jakarta, Arkadia Tower</h5>
+          <h5>leleOfficialJKT@lele.org</h5>
+          <h5>0212342088</h5>
+        </div>
+        <div class="info-store">
+          <h3>Lele Furnitures Bandung</h3>
+          <h5>Bandung, Jl. Sukajadi No. 20.</h5>
+          <h5>leleOfficialBDG@lele.org</h5>
+          <h5>0212342089</h5>
+        </div>
+        <div class="info-store">
+          <h3>Lele Furnitures Bogor</h3>
+          <h5>Bogor, Jl. Dipatiukur</h5>
+          <h5>leleOfficialBGR@lele.org</h5>
+          <h5>0212342090</h5>
+        </div>
+      </div>
+
+      <div class="questionContainer">
+        <div class="leftSide">
+          <h1 style="color: #ff5050">Let's talk</h1>
+          <p style="margin-top: 1rem; font-family: 'Open Sans'">
+            Is there a challenge your organization or company needs help
+            solving? We’d love to discuss it.
+          </p>
+        </div>
+
+        <div class="formClass" onsubmit="onSubmit()">
+          <div>
+            <p>Name</p>
+            <input style="width: 100%" type="text" />
+          </div>
+
+          <div>
+            <p>Email</p>
+            <input type="text" />
+          </div>
+
+          <div>
+            <p>Phone Number</p>
+            <input type="text" />
+          </div>
+
+          <div>
+            <p>Budget</p>
+            <input type="text" />
+          </div>
+
+          <div>
+            <p>Tell us about your dream furniture</p>
+            <input type="text" />
+          </div>
+
+          <button id="myBtn">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../src/search.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c0f7e988b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var modal = document.getElementById("myModal");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "flex";
+        modal.style.justifyContent = "center";
+        modal.style.alignItems = "center";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
 </html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="stylesheet" href="../style/faq.css" />
+    <title>FAQ</title>
+  </head>
+  <body>
+    <header>
+      <div class="upperHeader">
+        <img
+          onclick="openSearch()"
+          id="searchIcon"
+          src="../icons/search.png"
+          alt="search"
+        />
+        <div class="mainLogo">
+          <img src="../icons/logo_white.png" alt="lele" />
+        </div>
+
+        <div class="login">
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+        </div>
+      </div>
+
+      <div class="lowerHeader">
+        <a href="home.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="stores.html">Stores</a>
+        <a href="faq.html"></a>
+      </div>
+    </header>
+
+    <div id="myOverlay" class="overlay">
+      <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+        >×</span
+      >
+      <div class="overlay-content">
+        <form>
+          <input type="text" placeholder="Search Here..." name="search" />
+          <button type="submit">
+            <img src="../icons/search.png" alt="search" />
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="accordion">
+        <dl>
+          <dt>
+            <a
+              href="#accordion1"
+              aria-expanded="false"
+              aria-controls="accordion1"
+              class="accordion-title accordionTitle js-accordionTrigger"
+              >How do I check stock availability?</a
+            >
+          </dt>
+          <dd
+            class="accordion-content accordionItem is-collapsed"
+            id="accordion1"
+            aria-hidden="true"
+          >
+            <p>
+              You can check stock availability on each product’s page by
+              selecting the store you plan to visit. If the product is not
+              available, you can leave a mobile number or email address and we
+              will notify you as and when more stock arrives.
+            </p>
+          </dd>
+          <dt>
+            <a
+              href="#accordion2"
+              aria-expanded="false"
+              aria-controls="accordion2"
+              class="accordion-title accordionTitle js-accordionTrigger"
+            >
+              Do you deliver?</a
+            >
+          </dt>
+          <dd
+            class="accordion-content accordionItem is-collapsed"
+            id="accordion2"
+            aria-hidden="true"
+          >
+            <p>
+              Yes, we deliver. You can either place your order directly in the
+              store at the home delivery desk, or you may purchase online to
+              have products delivered directly to you in a few days. If you
+              arrange our delivery service in store, the delivery will normally
+              take place the following day. For online deliveries, there are two
+              delivery methods. We aim to deliver your order within 14 days,
+              depending on stock availability and where you live.
+            </p>
+          </dd>
+          <dt>
+            <a
+              href="#accordion3"
+              aria-expanded="false"
+              aria-controls="accordion3"
+              class="accordion-title accordionTitle js-accordionTrigger"
+            >
+              Can I return items?
+            </a>
+          </dt>
+          <dd
+            class="accordion-content accordionItem is-collapsed"
+            id="accordion3"
+            aria-hidden="true"
+          >
+            <p>
+              Yes, if you’re not totally satisfied you can return products
+              within 365 days of purchase. Please note:
+            </p>
+            <ul style="padding-left: 2rem; padding-bottom: 1rem">
+              <li>
+                Refunds will always be made back to the original method of
+                purchase.
+              </li>
+              <li>
+                We will give you a full refund when products are returned to us
+                with proof of purchase in new, unused and re-saleable condition,
+                with the packaging. You can return most of our products to any
+                Lele Furniture store. Just to let you know, we are unable to
+                offer refunds or exchange for custom made worktops, food or
+                drinks. Unless faulty, we may refuse the return or offer a
+                refund card if the returns criteria are not fully met.
+              </li>
+            </ul>
+          </dd>
+
+          <dt>
+            <a
+              href="#accordion3"
+              aria-expanded="false"
+              aria-controls="accordion3"
+              class="accordion-title accordionTitle js-accordionTrigger"
+            >
+              What do I do if I have something missing or damaged from my
+              delivery?
+            </a>
+          </dt>
+          <dd
+            class="accordion-content accordionItem is-collapsed"
+            id="accordion3"
+            aria-hidden="true"
+          >
+            <p>
+              We’re really sorry to hear about this. The quickest and easiest
+              way to sort out issues with your order is by visiting any of our
+              regular stores. Any products that are faulty or damaged are
+              covered under our
+              <span style="text-decoration: underline"
+                >365 day returns policy.</span
+              >
+              If an item is missing, please contact us.
+            </p>
+          </dd>
+        </dl>
+      </div>
+    </div>
+
+    <script>
+      //uses classList, setAttribute, and querySelectorAll
+      //if you want this to work in IE8/9 youll need to polyfill these
+      (function () {
+        var d = document,
+          accordionToggles = d.querySelectorAll(".js-accordionTrigger"),
+          setAria,
+          setAccordionAria,
+          switchAccordion,
+          touchSupported = "ontouchstart" in window,
+          pointerSupported = "pointerdown" in window;
+
+        skipClickDelay = function (e) {
+          e.preventDefault();
+          e.target.click();
+        };
+
+        setAriaAttr = function (el, ariaType, newProperty) {
+          el.setAttribute(ariaType, newProperty);
+        };
+        setAccordionAria = function (el1, el2, expanded) {
+          switch (expanded) {
+            case "true":
+              setAriaAttr(el1, "aria-expanded", "true");
+              setAriaAttr(el2, "aria-hidden", "false");
+              break;
+            case "false":
+              setAriaAttr(el1, "aria-expanded", "false");
+              setAriaAttr(el2, "aria-hidden", "true");
+              break;
+            default:
+              break;
+          }
+        };
+        //function
+        switchAccordion = function (e) {
+          console.log("triggered");
+          e.preventDefault();
+          var thisAnswer = e.target.parentNode.nextElementSibling;
+          var thisQuestion = e.target;
+          if (thisAnswer.classList.contains("is-collapsed")) {
+            setAccordionAria(thisQuestion, thisAnswer, "true");
+          } else {
+            setAccordionAria(thisQuestion, thisAnswer, "false");
+          }
+          thisQuestion.classList.toggle("is-collapsed");
+          thisQuestion.classList.toggle("is-expanded");
+          thisAnswer.classList.toggle("is-collapsed");
+          thisAnswer.classList.toggle("is-expanded");
+
+          thisAnswer.classList.toggle("animateIn");
+        };
+        for (var i = 0, len = accordionToggles.length; i < len; i++) {
+          if (touchSupported) {
+            accordionToggles[i].addEventListener(
+              "touchstart",
+              skipClickDelay,
+              false
+            );
+          }
+          if (pointerSupported) {
+            accordionToggles[i].addEventListener(
+              "pointerdown",
+              skipClickDelay,
+              false
+            );
+          }
+          accordionToggles[i].addEventListener("click", switchAccordion, false);
+        }
+      })();
+    </script>
+    <script src="../src/search.js"></script>
+  </body>
+</html>

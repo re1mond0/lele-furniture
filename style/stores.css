@@ -5,9 +5,13 @@
   src: url(../fonts/MADE\ TOMMY\ Medium.otf);
 }
 
+body {
+  font-family: "MADETOMMY";
+}
+
 .subHead {
   margin-top: 4rem;
-  margin-left: 7rem;
+  /* margin-left: 7rem; */
   margin-bottom: 2rem;
   font-size: 50px;
   font-family: MADETOMMY;
@@ -20,7 +24,7 @@ h5 {
 .content-1 {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 7rem;
+  /* margin-left: 7rem; */
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
 }
@@ -28,4 +32,166 @@ h5 {
 .info-store {
   width: 45%;
   margin-bottom: 2rem;
+}
+
+.info-store h3 {
+  font-size: 30px;
+  font-family: "MADETOMMY";
+  color: #ff5050;
+}
+
+.info-store h5 {
+  font-size: 15px;
+  font-family: "Open Sans";
+  line-height: 1.7;
+}
+
+.questionContainer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.leftSide {
+  max-width: 50%;
+}
+
+.formClass div {
+  max-width: 45%;
+  width: 100%;
+}
+
+.formClass div:last-of-type {
+  max-width: 98%;
+}
+
+.questionContainer > .formClass {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin-left: 5rem;
+}
+
+input[type="text"] {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #fafafa;
+  width: 100%;
+  color: #fafafa;
+  margin-top: 1rem;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+button {
+  padding: 0.3rem 1rem;
+  /* border-radius: 0.2rem; */
+  cursor: pointer;
+  background-color: transparent;
+  color: #ff5050;
+  font-size: 15px;
+  border: 2px solid #ff5050;
+  transition: 0.2s ease-in-out;
+  /* font-weight: bold; */
+}
+
+button:hover {
+  background-color: #ff5050;
+  color: #fafafa;
+}
+
+.fa-check {
+  font-size: 60px;
+  color: #fafafa;
+  border: 4px solid #fafafa;
+  padding: 2rem;
+  border-radius: 100%;
+  margin-bottom: 0.75rem;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #ff5050;
+  margin: auto;
+  padding: 6rem;
+  border: 1px solid #888;
+  filter: drop-shadow(0 0 0.5rem black);
+  width: auto;
+  text-align: center;
+  color: #333;
+  border-radius: 15px;
+}
+
+.modal-content h2 {
+  font-size: 60px;
+  margin-bottom: 2rem;
+  color: #fafafa;
+}
+
+.modal-content h3 {
+  font-family: "Open Sans";
+  font-size: 30px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* .formClass div {
+  width: 50%;
+} */
+
+@media (min-width: 640px) {
+}
+
+@media (min-width: 768px) {
+  .containerBox {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .containerBox {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .containerBox {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1536px) {
 }
