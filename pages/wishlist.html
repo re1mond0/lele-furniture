@@ -14,6 +14,67 @@
 	</head>
 
 	<body>
+		<header>
+      <div class="upperHeader">
+        <i
+          class="fa fa-search fa-lg"
+          onclick="openSearch()"
+          id="searchIcon"
+        ></i>
+        <div class="mainLogo">
+          <img src="../icons/logo_white.png" alt="lele" 
+          onclick="location.href = 'home.html'"/>
+        </div>
+
+        <div class="login">
+          <a href="login.html"
+            >Login
+            <i class="fas fa-sign-in-alt"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="lowerHeader">
+        <a href="home.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="location.href = 'product.html'">
+            Products
+          </button>
+          <div class="dropdown-content">
+            <label>Categories</label>
+            <a href="#">Chairs</a>
+            <a href="#">Tables</a>
+            <a href="#">Sofas</a>
+            <a href="#">Drawers</a>
+          </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="stores.html">Contact us</a>
+      </div>
+    </header>
+
+    <div id="myOverlay" class="overlay">
+      <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+        >×</span
+      >
+      <div class="overlay-content">
+        <div class="searchContainer">
+          <input
+            type="text"
+            placeholder="Search Here..."
+            name="search"
+            autocomplete="off"
+          />
+          <button type="submit">
+            <i
+            class="fa fa-search fa-lg"
+            id="searchIcon"
+            onclick="location.href = 'searchResults.html'"
+            ></i>
+          </button>
+        </div>
+      </div>
+    </div>
 		<div id="content">
 			<span id="mid" class="container">
 				<span class="subHead containerItem">Wishlist</span>
@@ -39,7 +100,7 @@
                     <i class="far fa-trash-alt"></i>
 					<a href="item.html">
 						<div class="productImage">
-							<img src="../testImage.jpg">
+							<img src="../productPics/wishlist1.png">
 						</div>
 					</a>
 					<div class="prodName">Product Name</div>
@@ -49,7 +110,7 @@
                     <i class="far fa-trash-alt"></i>
 					<a href="item.html">
 						<div class="productImage">
-							<img src="../testImage.jpg">
+							<img src="../productPics/wishlist3.png">
 						</div>
 					</a>
 					<div class="prodName">Product Name</div>
@@ -59,7 +120,7 @@
                     <i class="far fa-trash-alt"></i>
 					<a href="item.html">
 						<div class="productImage">
-							<img src="../testImage.jpg">
+							<img src="../productPics/wishlist4.png">
 						</div>
 					</a>
 					<div class="prodName">Product Name</div>

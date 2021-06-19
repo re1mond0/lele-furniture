@@ -21,7 +21,8 @@
           id="searchIcon"
         ></i>
         <div class="mainLogo">
-          <img src="../icons/logo_white.png" alt="lele" />
+          <img src="../icons/logo_white.png" alt="lele" 
+          onclick="location.href = 'home.html'"/>
         </div>
 
         <div class="login">
@@ -43,10 +44,11 @@
             <a href="#">Chairs</a>
             <a href="#">Tables</a>
             <a href="#">Sofas</a>
+            <a href="#">Drawers</a>
           </div>
         </div>
         <a href="about.html">About</a>
-        <a href="stores.html">Stores</a>
+        <a href="stores.html">Contact us</a>
       </div>
     </header>
 
@@ -55,7 +57,7 @@
         >×</span
       >
       <div class="overlay-content">
-        <form>
+        <div class="searchContainer">
           <input
             type="text"
             placeholder="Search Here..."
@@ -63,15 +65,18 @@
             autocomplete="off"
           />
           <button type="submit">
-            <img src="../icons/search.png" alt="search" />
+            <i
+            class="fa fa-search fa-lg"
+            id="searchIcon"
+            onclick="location.href = 'searchResults.html'"
+            ></i>
           </button>
-        </form>
+        </div>
       </div>
     </div>
 
     <div class="content">
       <div class="thumbnail">
-        <!-- <img src="../pictures/main banner.png" alt="lele" /> -->
       </div>
 
       <div class="highlight">
@@ -109,7 +114,7 @@
             <div class="productItem">
               <a href="item.html">
                 <div class="productImage">
-                  <img src="../testImage.jpg">
+                  <img src="../productPics/home1.png">
                 </div>
               </a>
               <div class="prodName">Product Name</div>
@@ -117,7 +122,7 @@
             <div class="productItem">
               <a href="item.html">
                 <div class="productImage">
-                  <img src="../testImage.jpg">
+                  <img src="../productPics/home2.png">
                 </div>
               </a>
               <div class="prodName">Product Name</div>
@@ -125,7 +130,7 @@
             <div class="productItem">
               <a href="item.html">
                 <div class="productImage">
-                  <img src="../testImage.jpg">
+                  <img src="../productPics/home3.png">
                 </div>
               </a>
               <div class="prodName">Product Name</div>
@@ -133,7 +138,7 @@
             <div class="productItem">
               <a href="item.html">
                 <div class="productImage">
-                  <img src="../testImage.jpg">
+                  <img src="../productPics/home4.png">
                 </div>
               </a>
               <div class="prodName">Product Name</div>

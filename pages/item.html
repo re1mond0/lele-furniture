@@ -9,33 +9,50 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
     />
-    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/c0f7e988b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Item</title>
   </head>
 
   <body>
     <header>
       <div class="upperHeader">
-        <img
+        <i
+          class="fa fa-search fa-lg"
           onclick="openSearch()"
           id="searchIcon"
-          src="../icons/search.png"
-          alt="search"
-        />
+        ></i>
         <div class="mainLogo">
-          <img src="../icons/logo_white.png" alt="lele" />
+          <img src="../icons/logo_white.png" alt="lele" 
+          onclick="location.href = 'home.html'"/>
         </div>
 
         <div class="login">
-          <a href="login.html">Login</a>
-          <a href="register.html">Register</a>
+          <a href="login.html"
+            >Login
+            <i class="fas fa-sign-in-alt"></i>
+          </a>
         </div>
       </div>
 
       <div class="lowerHeader">
         <a href="home.html">Home</a>
-        <a href="product.html">Products</a>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="location.href = 'product.html'">
+            Products
+          </button>
+          <div class="dropdown-content">
+            <label>Categories</label>
+            <a href="#">Chairs</a>
+            <a href="#">Tables</a>
+            <a href="#">Sofas</a>
+            <a href="#">Drawers</a>
+          </div>
+        </div>
         <a href="about.html">About</a>
-        <a href="stores.html">Stores</a>
+        <a href="stores.html">Contact us</a>
       </div>
     </header>
 
@@ -44,12 +61,21 @@
         >×</span
       >
       <div class="overlay-content">
-        <form>
-          <input type="text" placeholder="Search Here..." name="search" />
+        <div class="searchContainer">
+          <input
+            type="text"
+            placeholder="Search Here..."
+            name="search"
+            autocomplete="off"
+          />
           <button type="submit">
-            <img src="../icons/search.png" alt="search" />
+            <i
+            class="fa fa-search fa-lg"
+            id="searchIcon"
+            onclick="location.href = 'searchResults.html'"
+            ></i>
           </button>
-        </form>
+        </div>
       </div>
     </div>
 

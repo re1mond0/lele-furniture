@@ -71,8 +71,8 @@ label {
 }
 
 #content {
+  margin-top: 5rem;
   padding: 20px;
-  overflow: hidden;
   width: 100%;
   margin-bottom: 3rem;
 }

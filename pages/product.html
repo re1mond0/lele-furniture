@@ -16,47 +16,65 @@
 	<body>
 		<header>
 			<div class="upperHeader">
-				<img
-					onclick="openSearch()"
-					id="searchIcon"
-					src="../icons/search.png"
-					alt="search"
-				/>
-				<div class="mainLogo">
-					<img src="../icons/logo_white.png" alt="lele" />
-				</div>
-
-				<div class="login">
-					<a href="login.html">Login</a>
-					<a href="register.html">Register</a>
-				</div>
+			  <i
+				class="fa fa-search fa-lg"
+				onclick="openSearch()"
+				id="searchIcon"
+			  ></i>
+			  <div class="mainLogo">
+				<img src="../icons/logo_white.png" alt="lele" 
+				onclick="location.href = 'home.html'"/>
+			  </div>
+	  
+			  <div class="login">
+				<a href="login.html"
+				  >Login
+				  <i class="fas fa-sign-in-alt"></i>
+				</a>
+			  </div>
 			</div>
-
+	  
 			<div class="lowerHeader">
-				<a href="home.html">Home</a>
-				<a href="product.html">Products</a>
-				<a href="about.html">About</a>
-				<a href="stores.html">Stores</a>
+			  <a href="home.html">Home</a>
+			  <div class="dropdown">
+				<button class="dropbtn" onclick="location.href = 'product.html'">
+				  Products
+				</button>
+				<div class="dropdown-content">
+				  <label>Categories</label>
+				  <a href="#">Chairs</a>
+				  <a href="#">Tables</a>
+				  <a href="#">Sofas</a>
+				  <a href="#">Drawers</a>
+				</div>
+			  </div>
+			  <a href="about.html">About</a>
+			  <a href="stores.html">Contact us</a>
 			</div>
-		</header>
-
-		<div id="myOverlay" class="overlay">
+		  </header>
+	  
+		  <div id="myOverlay" class="overlay">
 			<span class="closebtn" onclick="closeSearch()" title="Close Overlay"
-				>×</span
+			  >×</span
 			>
 			<div class="overlay-content">
-				<form>
-					<input
-						type="text"
-						placeholder="Search Here..."
-						name="search"
-					/>
-					<button type="submit">
-						<img src="../icons/search.png" alt="search" />
-					</button>
-				</form>
+			  <div class="searchContainer">
+				<input
+				  type="text"
+				  placeholder="Search Here..."
+				  name="search"
+				  autocomplete="off"
+				/>
+				<button type="submit">
+				  <i
+				  class="fa fa-search fa-lg"
+				  id="searchIcon"
+				  onclick="location.href = 'searchResults.html'"
+				  ></i>
+				</button>
+			  </div>
 			</div>
-		</div>
+		  </div>
 
 		<div id="content">
 			<span class="slide">
@@ -98,7 +116,7 @@
 				<div class="productItem">
 					<a href="item.html">
 						<div class="productImage">
-							<img src="../testImage.jpg">
+							<img src="../productPics/product1.png">
 						</div>
 					</a>
 					<div class="prodName">Product Name</div>
@@ -107,7 +125,7 @@
 				<div class="productItem">
 					<a href="item.html">
 						<div class="productImage">
-							<img src="../testImage.jpg">
+							<img src="../productPics/product2.png">
 						</div>
 					</a>
 					<div class="prodName">Product Name</div>
@@ -116,7 +134,7 @@
 				<div class="productItem">
 					<a href="item.html">
 						<div class="productImage">
-							<img src="../testImage.jpg">
+							<img src="../productPics/product3.png">
 						</div>
 					</a>
 					<div class="prodName">Product Name</div>
@@ -125,7 +143,7 @@
 				<div class="productItem">
 					<a href="item.html">
 						<div class="productImage">
-							<img src="../testImage.jpg">
+							<img src="../productPics/product4.png">
 						</div>
 					</a>
 					<div class="prodName">Product Name</div>
@@ -134,7 +152,7 @@
 				<div class="productItem">
 					<a href="item.html">
 						<div class="productImage">
-							<img src="../testImage.jpg">
+							<img src="../productPics/product5.png">
 						</div>
 					</a>
 					<div class="prodName">Product Name</div>
@@ -143,7 +161,7 @@
 				<div class="productItem">
 					<a href="item.html">
 						<div class="productImage">
-							<img src="../testImage.jpg">
+							<img src="../productPics/product6.png">
 						</div>
 					</a>
 					<div class="prodName">Product Name</div>
@@ -152,7 +170,7 @@
 				<div class="productItem">
 					<a href="item.html">
 						<div class="productImage">
-							<img src="../testImage.jpg">
+							<img src="../productPics/product7.png">
 						</div>
 					</a>
 					<div class="prodName">Product Name</div>
@@ -161,7 +179,7 @@
 				<div class="productItem">
 					<a href="item.html">
 						<div class="productImage">
-							<img src="../testImage.jpg">
+							<img src="../productPics/product8.png">
 						</div>
 					</a>
 					<div class="prodName">Product Name</div>
@@ -170,7 +188,7 @@
 				<div class="productItem">
 					<a href="item.html">
 						<div class="productImage">
-							<img src="../testImage.jpg">
+							<img src="../productPics/product9.png">
 						</div>
 					</a>
 					<div class="prodName">Product Name</div>
@@ -179,7 +197,7 @@
 				<div class="productItem">
 					<a href="item.html">
 						<div class="productImage">
-							<img src="../testImage.jpg">
+							<img src="../productPics/product10.png">
 						</div>
 					</a>
 					<div class="prodName">Product Name</div>
@@ -197,9 +215,15 @@
 				</h3>
 			</div>
 			<div id="content2Images">
-				<div class="content2img"></div>
-				<div class="content2img"></div>
-				<div class="content2img"></div>
+				<div class="content2img">
+					<img src="../productPics/productalt1.png">
+				</div>
+				<div class="content2img">
+					<img src="../productPics/productalt2.png">
+				</div>
+				<div class="content2img">
+					<img src="../productPics/productalt3.png">
+				</div>
 			</div>
 		</div>
 		<script src="../src/productPage.js"></script>

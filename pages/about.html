@@ -7,64 +7,84 @@
 		<title>About Us</title>
 		<link rel="stylesheet" href="../style/reset.css" />
 		<link rel="stylesheet" href="../style/about.css" />
+		<script
+		src="https://kit.fontawesome.com/c0f7e988b7.js"
+		crossorigin="anonymous"
+		></script>
 	</head>
 
 	<body>
 		<header>
 			<div class="upperHeader">
-				<img
-					onclick="openSearch()"
-					id="searchIcon"
-					src="../icons/search.png"
-					alt="search"
-				/>
-				<div class="mainLogo">
-					<img src="../icons/logo_white.png" alt="lele" />
-				</div>
-
-				<div class="login">
-					<a href="login.html">Login</a>
-					<a href="register.html">Register</a>
-				</div>
+			  <i
+				class="fa fa-search fa-lg"
+				onclick="openSearch()"
+				id="searchIcon"
+			  ></i>
+			  <div class="mainLogo">
+				<img src="../icons/logo_white.png" alt="lele" 
+				onclick="location.href = 'home.html'"/>
+			  </div>
+	  
+			  <div class="login">
+				<a href="login.html"
+				  >Login
+				  <i class="fas fa-sign-in-alt"></i>
+				</a>
+			  </div>
 			</div>
-
+	  
 			<div class="lowerHeader">
-				<a href="home.html">Home</a>
-				<a href="product.html">Products</a>
-				<a href="about.html">About</a>
-				<a href="stores.html">Stores</a>
+			  <a href="home.html">Home</a>
+			  <div class="dropdown">
+				<button class="dropbtn" onclick="location.href = 'product.html'">
+				  Products
+				</button>
+				<div class="dropdown-content">
+				  <label>Categories</label>
+				  <a href="#">Chairs</a>
+				  <a href="#">Tables</a>
+				  <a href="#">Sofas</a>
+				  <a href="#">Drawers</a>
+				</div>
+			  </div>
+			  <a href="about.html">About</a>
+			  <a href="stores.html">Contact us</a>
 			</div>
 		</header>
-
+	  
 		<div id="myOverlay" class="overlay">
 			<span class="closebtn" onclick="closeSearch()" title="Close Overlay"
-				>×</span
+			  >×</span
 			>
 			<div class="overlay-content">
-				<form>
-					<input
-						type="text"
-						placeholder="Search Here..."
-						name="search"
-					/>
-					<button type="submit">
-						<img src="../icons/search.png" alt="search" />
-					</button>
-				</form>
+			  <div class="searchContainer">
+				<input
+				  type="text"
+				  placeholder="Search Here..."
+				  name="search"
+				  autocomplete="off"
+				/>
+				<button type="submit">
+				  <i
+				  class="fa fa-search fa-lg"
+				  id="searchIcon"
+				  onclick="location.href = 'searchResults.html'"
+				  ></i>
+				</button>
+			  </div>
 			</div>
-		</div>
+		  </div>
 
 		<section class="container aboutUS">
 			<img class="logoImg" src="../icons/white_fish.png" alt="" />
 			<div class="txt">
 				<div class="TTLtxt">We care, we really do</div>
 				<div class="ISItxt">
-					We strive to provide the most unique and funky furniture<br />
+					We strive to provide the most unique and funky furniture
 					you won't find anywhere else. Visuals aren't the only
-					thing<br />
-					focus on, each component of our furniture is made with high
-					quality<br />
-					materials with the upmost care.
+					thing focus on, each component of our furniture is made with high
+					quality materials with the upmost care.
 				</div>
 			</div>
 		</section>
@@ -83,6 +103,16 @@
 				</div>
 			</div>
 			<img class="logoImg2" src="../pictures/photosFace.png" alt="" />
+		</section>
+
+		<section class="container clients">
+			<div class="TTLtxt">Our Clients</div>
+				<div class="clientLogos">
+					<img src="../client logos/metLogo.png" onclick="location.href = 'https://www.metmuseum.org/'" >
+					<img src="../client logos/nafa.png" onclick="location.href = 'https://www.nafa.edu.sg/'">
+					<img src="../client logos/ubisoft.png" onclick="location.href = 'https://www.ubisoft.com/en-us/'">
+				</div>
+			
 		</section>
 
 		<script src="../src/search.js"></script>
