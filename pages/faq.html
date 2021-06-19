@@ -11,43 +11,28 @@
   <body>
     <header>
       <div class="upperHeader">
-        <i
-          class="fa fa-search fa-lg"
+        <img
           onclick="openSearch()"
           id="searchIcon"
-        ></i>
+          src="../icons/search.png"
+          alt="search"
+        />
         <div class="mainLogo">
-          <img
-            src="../icons/logo_white.png"
-            alt="lele"
-            onclick="location.href = 'home.html'"
-          />
+          <img src="../icons/logo_white.png" alt="lele" />
         </div>
 
         <div class="login">
-          <a href="login.html"
-            >Login
-            <i class="fas fa-sign-in-alt"></i>
-          </a>
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
         </div>
       </div>
 
       <div class="lowerHeader">
         <a href="home.html">Home</a>
-        <div class="dropdown">
-          <button class="dropbtn" onclick="location.href = 'product.html'">
-            Products
-          </button>
-          <div class="dropdown-content">
-            <label>Categories</label>
-            <a href="#">Chairs</a>
-            <a href="#">Tables</a>
-            <a href="#">Sofas</a>
-            <a href="#">Drawers</a>
-          </div>
-        </div>
+        <a href="product.html">Products</a>
         <a href="about.html">About</a>
-        <a href="stores.html">Contact us</a>
+        <a href="stores.html">Stores</a>
+        <a href="faq.html"></a>
       </div>
     </header>
 
@@ -56,25 +41,17 @@
         >×</span
       >
       <div class="overlay-content">
-        <div class="searchContainer">
-          <input
-            type="text"
-            placeholder="Search Here..."
-            name="search"
-            autocomplete="off"
-          />
+        <form>
+          <input type="text" placeholder="Search Here..." name="search" />
           <button type="submit">
-            <i
-              class="fa fa-search fa-lg"
-              id="searchIcon"
-              onclick="location.href = 'searchResults.html'"
-            ></i>
+            <img src="../icons/search.png" alt="search" />
           </button>
-        </div>
+        </form>
       </div>
     </div>
 
     <div class="container">
+      <h1 class="heading-primary">FAQ</h1>
       <div class="accordion">
         <dl>
           <dt>
@@ -261,10 +238,6 @@
         }
       })();
     </script>
-    <script
-    src="https://kit.fontawesome.com/c0f7e988b7.js"
-    crossorigin="anonymous"
-  ></script>
     <script src="../src/search.js"></script>
   </body>
 </html>
