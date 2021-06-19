@@ -6,8 +6,9 @@
 }
 
 .subHead {
-  font-size: 50px;
-  font-family: MADETOMMY !important;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif !important;
+  text-align: center;
 }
 
 body {
@@ -17,29 +18,6 @@ body {
 
 label {
   font-size: 20px;
-}
-
-#barsLogo {
-  height: 50px;
-  width: 50px;
-  padding: 10px;
-  border-radius: 100%;
-  margin-top: 2rem;
-  margin-left: 1rem;
-  background-color: white;
-  color: #333;
-  transition: 0.3s ease-in-out;
-  filter: drop-shadow(0.2rem 0.2rem 0.5rem black);
-}
-
-#barsLogo:hover {
-  background-color: #333;
-  color: white;
-  border: 4px solid white;
-}
-
-#menuLogo {
-  width: 30px;
 }
 
 .container {
@@ -59,6 +37,7 @@ label {
 #productList {
   grid-template-columns: auto auto auto auto auto;
   justify-content: center;
+  text-align: center;
 }
 
 .productItem {
@@ -67,6 +46,18 @@ label {
   padding: 10px;
   width: min-content;
   flex-direction: column;
+}
+
+#productList > div > i {
+  color: rgb(163, 163, 163);
+  transition: 0.2s ease-in-out;
+  position: absolute;
+  font-size: 30px;
+  margin: 10px 0 0 260px;
+}
+
+#productList > div > i:hover {
+  color: #ff5050;
 }
 
 .prodName {
@@ -79,53 +70,11 @@ label {
   font-size: 15px;
 }
 
-.nav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background-color: rgb(0, 0, 0);
-  filter: drop-shadow(0 0 0.5rem black);
-  overflow-x: hidden;
-  padding-top: 5rem;
-  transition: 0.7s;
-}
-
-.nav a {
-  display: block;
-  padding: 20px 30px;
-  font-size: 25px;
-  text-decoration: none;
-  color: #ccc;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.151);
-}
-
-.nav a:hover {
-  color: #fff;
-  transition: 0.4s;
-}
-
-.nav .close {
-  position: absolute;
-  top: 0;
-  right: 22px;
-  margin-left: 50px;
-  font-size: 30px;
-  border-bottom: none !important;
-}
-
-.slide a {
-  color: #000;
-  font-size: 36px;
-}
-
 #content {
   padding: 20px;
-  transition: margin-left 0.7s;
   overflow: hidden;
   width: 100%;
+  margin-bottom: 3rem;
 }
 
 .productImage {
@@ -145,6 +94,8 @@ label {
 }
 
 #selector {
+  display: flex;
+  justify-content: center;
   margin-bottom: 1rem;
   align-self: flex-start !important;
 }
@@ -222,56 +173,29 @@ input:checked + label:before {
   background: #666;
 }
 
-#content2 {
-  overflow: hidden;
-  margin: 3rem 0 0 0;
-  background-color: #ff5050;
-  padding: 5rem 15rem;
+#content > button {
   display: flex;
-  flex-direction: row;
-  gap: 3rem;
-  align-items: center;
-  justify-content: center;
-}
-
-#content2Text {
-  max-width: 500px;
-}
-
-#content2 > div > h2 {
-  font-size: 30px;
-  text-align: left;
-  font-family: "MADE TOMMY", sans-serif;
-}
-
-#content2 > div > h3 {
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
   font-size: 15px;
-  font-family: "Open Sans", sans-serif;
+  padding: 1rem;
+  gap: 1rem;
+  font-family: "MADE TOMMY", sans-serif;
+  border: 2px solid white;
+  color: white;
+  transition: 0.2s ease-in-out;
+  background-color: rgba(255, 255, 255, 0);
 }
 
-#content2Images {
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-}
-
-.content2img {
-  width: 100px;
-  height: 300px;
-  background-color: black;
+#content > button:hover {
+  color: #333;
+  background-color: white;
 }
 
 @media (min-width: 768px) {
   #productList {
     grid-template-columns: auto auto;
-  }
-  #content2 > div > h2 {
-    font-size: 20px;
-  }
-
-  #content2 {
-    align-items: center;
-    padding: 2rem 5rem;
   }
 }
 
@@ -284,12 +208,5 @@ input:checked + label:before {
 @media (min-width: 1280px) {
   #productList {
     grid-template-columns: auto auto auto auto auto;
-  }
-
-  #content2 {
-    padding: 5rem 15rem;
-  }
-  #content2 > div > h2 {
-    font-size: 40px;
   }
 }

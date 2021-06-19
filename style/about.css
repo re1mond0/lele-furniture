@@ -1,32 +1,45 @@
-.aboutUS {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	margin-top: 100px;
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem 0;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
 
 .TTLtxt {
-	margin-left: 50px;
-	font-size: 50px;
+  margin-left: 50px;
+  font-size: 50px;
 }
 
 .ISItxt {
-	padding-left: 50px;
-	margin-top: 30px;
-	font-family: "Open Sans", sans-serif;
-	font-size: 20px;
+  padding-left: 50px;
+  margin-top: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
 }
 
 .logoImg {
-	width: 250px;
-	height: auto;
+  width: 250px;
+  height: auto;
 }
 
 .txt {
-	flex-direction: column;
-	margin-bottom: 130px;
-	font-family: MADETOMMY, sans-serif;
+  flex-direction: column;
+  margin-bottom: 130px;
+  max-width: 400px;
+  font-family: MADETOMMY, sans-serif;
+}
+
+.whoWe {
+  background-color: white;
+  color: #ff5050;
+  display: flex;
+  justify-content: space-around !important;
+}
+
+.logoImg2 {
+  width: 400px;
+  height: auto;
 }

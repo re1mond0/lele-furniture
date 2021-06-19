@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+        src="https://kit.fontawesome.com/c0f7e988b7.js"
+        crossorigin="anonymous"
+        ></script>
+		<link rel="stylesheet" href="../style/reset.css" />
+		<link rel="stylesheet" href="../style/searchResults.css" />
+		<title>Search Results</title>
+	</head>
+
+	<body>
+		<div id="content">
+			<span id="mid" class="container">
+				<span class="subHead containerItem">Showing results for
+                    <text style="font-weight:bold">"Big Man"</text>. 4 results found.
+                </span>
+					
+				<div id = "selector">
+                    <div class="select" tabindex="1">
+                        <input class="selectopt" name="test" type="radio" id="opt1" checked>
+                        <label for="opt1" class="option">Sort by</label>
+                        <input class="selectopt" name="test" type="radio" id="opt1">
+                        <label for="opt1" class="option">Price (High - Low)</label>
+                        <input class="selectopt" name="test" type="radio" id="opt2">
+                        <label for="opt2" class="option">Price (Low - High)</label>
+                        <input class="selectopt" name="test" type="radio" id="opt3">
+                        <label for="opt3" class="option">Relevance</label>
+                        <input class="selectopt" name="test" type="radio" id="opt4">
+                        <label for="opt4" class="option">Newest Releases</label>
+                    </div>
+                </div>
+			</span>
+
+			<div id="productList" class="container">
+				<div class="productItem">
+					<a href="item.html">
+						<div class="productImage">
+							<img src="../testImage.jpg">
+						</div>
+					</a>
+					<div class="prodName">Product Name</div>
+					<div class="prodPrice">Rp. 15,000.00</div>
+				</div>
+				<div class="productItem">
+					<a href="item.html">
+						<div class="productImage">
+							<img src="../testImage.jpg">
+						</div>
+					</a>
+					<div class="prodName">Product Name</div>
+					<div class="prodPrice">Rp. 15,000.00</div>
+				</div>
+				<div class="productItem">
+					<a href="item.html">
+						<div class="productImage">
+							<img src="../testImage.jpg">
+						</div>
+					</a>
+					<div class="prodName">Product Name</div>
+					<div class="prodPrice">Rp. 15,000.00</div>
+				</div>
+                <div class="productItem">
+					<a href="item.html">
+						<div class="productImage">
+							<img src="../testImage.jpg">
+						</div>
+					</a>
+					<div class="prodName">Product Name</div>
+					<div class="prodPrice">Rp. 15,000.00</div>
+				</div>
+			</div>
+		</div>
+		<script src="../src/productPage.js"></script>
+		<script src="../src/search.js"></script>
+	</body>
+</html>
