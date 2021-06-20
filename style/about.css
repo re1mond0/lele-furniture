@@ -8,15 +8,22 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+/* font-family: MADETOMMY, sans-serif;
+  font-family: "Open Sans", sans-serif; */
+
+@font-face {
+  font-family: MADETOMMY;
+  src: url(../fonts/MADE\ TOMMY\ Medium.otf);
+}
 
 .TTLtxt {
-  font-family: "MADETOMMY", sans-serif;
+  font-family: MADETOMMY, sans-serif;
   font-size: 50px;
 }
 
 .ISItxt {
   margin-top: 30px;
-  font-family: "Open Sans", sans-serif;
+  font-family: MADETOMMY, sans-serif;
   font-size: 20px;
 }
 

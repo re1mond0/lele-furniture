@@ -86,19 +86,17 @@ input[type="text"]:focus {
   outline: none;
 }
 
-button {
+#myBtn {
   padding: 0.3rem 1rem;
-  /* border-radius: 0.2rem; */
   cursor: pointer;
   background-color: transparent;
   color: #ff5050;
   font-size: 15px;
   border: 2px solid #ff5050;
   transition: 0.2s ease-in-out;
-  /* font-weight: bold; */
 }
 
-button:hover {
+#myBtn:hover {
   background-color: #ff5050;
   color: #fafafa;
 }
