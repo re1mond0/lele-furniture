@@ -6,25 +6,33 @@
 }
 footer{
     background-color: #333;
+    margin-top: 1rem;
 }
 .foot{
     height: 300px;
     width: 100%;
     display: flex;
-    
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
+    /* align-items: center; */
 }
+.foot > div{
+    /* width: 10rem; */
+    padding-top: 2rem;
+}
+
 #logo-footer{
     width: 100px;
 }
+
 #menu-footer{
     color: #E5E5E5;
 }
-
 #menu-footer a{
     text-decoration: none;
     color: #E5E5E5;
+}
+#menu-footer ul{
+    margin-top: 1rem;
 }
 #menu-footer ul li{
     list-style: none;
@@ -34,12 +42,16 @@ footer{
 }
 
 #product-footer{
-    padding-bottom: 3.1rem;
+    padding-bottom: 0;
+    color: #E5E5E5;
 }
 #product-footer a{
     list-style: none;
     text-decoration: none;
     color: #E5E5E5;
+}
+#product-footer ul{
+    margin-top: 1rem;
 }
 #product-footer ul li{
     font-size: 13px;
@@ -47,9 +59,27 @@ footer{
     line-height: 2;
 }
 
+#help-footer{
+    color: #E5E5E5;
+    
+    /* padding-bottom: 3.8rem; */
+}
+#help-footer a{
+    list-style: none;
+    text-decoration: none;
+}
+#help-footer ul{
+    margin-top: 1rem;
+}
+#help-footer ul li{
+    color: #E5E5E5;
+    font-size: 13px;
+    line-height: 2;
+}
+
 #follow-footer{
     color: #E5E5E5;
-    padding-bottom: 5rem;
+    /* padding-bottom: 4rem; */
     display: flex;
     flex-direction: column;
 }
@@ -58,13 +88,24 @@ footer{
 }
 #follow-footer a{
     font-size: 20px;
-    padding-top: 0.5rem; 
     color: #E5E5E5;
 }
 #follow-footer-img{
     display: flex;
     justify-content: space-around;
+    margin-top: 1rem;
 }
+
 #copyright-lele{
     text-align: center;
+    padding-bottom: 2rem;
+    color: #E5E5E5;
+}
+
+@media (max-width: 500px) {
+    .foot{
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
 }
