@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/reset.css" />
     <link rel="stylesheet" href="../style/home.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
     <script
       src="https://kit.fontawesome.com/c0f7e988b7.js"
       crossorigin="anonymous"
@@ -21,19 +22,28 @@
           id="searchIcon"
         ></i>
         <div class="mainLogo">
-          <img src="../icons/logo_white.png" alt="lele" 
-          onclick="location.href = 'home.html'"/>
+          <img
+            src="../icons/logo_white.png"
+            alt="lele"
+            onclick="location.href = 'home.html'"
+          />
         </div>
 
         <div class="login">
-            <a href="wishlist.html" style="display: flex; flex-direction: row; gap: 0.5rem;">
-                <text>Wishlist</text>
-                <i class="fas fa-heart"></i>
-            </a>
-            <a href="home.html" style="display: flex; flex-direction: row; gap: 0.5rem;">
-                <text>Logout</text>
-                <i class="fas fa-sign-out-alt"></i>
-            </a>
+          <a
+            href="wishlist.html"
+            style="display: flex; flex-direction: row; gap: 0.5rem"
+          >
+            <text>Wishlist</text>
+            <i class="fas fa-heart"></i>
+          </a>
+          <a
+            href="home.html"
+            style="display: flex; flex-direction: row; gap: 0.5rem"
+          >
+            <text>Logout</text>
+            <i class="fas fa-sign-out-alt"></i>
+          </a>
         </div>
       </div>
 
@@ -70,9 +80,9 @@
           />
           <button type="submit">
             <i
-            class="fa fa-search fa-lg"
-            id="searchIcon"
-            onclick="location.href = 'searchResults.html'"
+              class="fa fa-search fa-lg"
+              id="searchIcon"
+              onclick="location.href = 'searchResults.html'"
             ></i>
           </button>
         </div>
@@ -80,13 +90,12 @@
     </div>
 
     <div class="content">
-      <div class="thumbnail">
-      </div>
+      <div class="thumbnail"></div>
 
       <div class="highlight">
         <div class="highlight1">
           <div class="box1">
-            <img src="../pictures/aotd.png">
+            <img src="../pictures/aotd.png" />
           </div>
           <div class="textContainer">
             <h2>Aesthetics Of The Day</h2>
@@ -95,12 +104,12 @@
         </div>
 
         <div class="highlight2">
-          <div class="textContainer" style="text-align: right;">
+          <div class="textContainer" style="text-align: right">
             <h2>Product Name</h2>
             <p>A deadly combo of cute and comfort!</p>
           </div>
           <div class="box2">
-            <img src="../pictures/potd.png">
+            <img src="../pictures/potd.png" />
           </div>
         </div>
       </div>
@@ -114,53 +123,54 @@
 
       <div class="textThumbnail blackRow">
         <div class="subhead">Explore Our Products</div>
-        <div class="subtitle">For the artists, the creatives, the visionaries, <br/>
-          the people, and of course, you.</div>
-          <div id="productList" class="container">
-            <div class="productItem">
-              <a href="item.html">
-                <div class="productImage">
-                  <img src="../productPics/home1.png">
-                </div>
-              </a>
-              <div class="prodName">Product Name</div>
-            </div>
-            <div class="productItem">
-              <a href="item.html">
-                <div class="productImage">
-                  <img src="../productPics/home2.png">
-                </div>
-              </a>
-              <div class="prodName">Product Name</div>
-            </div>
-            <div class="productItem">
-              <a href="item.html">
-                <div class="productImage">
-                  <img src="../productPics/home3.png">
-                </div>
-              </a>
-              <div class="prodName">Product Name</div>
-            </div>
-            <div class="productItem">
-              <a href="item.html">
-                <div class="productImage">
-                  <img src="../productPics/home4.png">
-                </div>
-              </a>
-              <div class="prodName">Product Name</div>
-            </div>
-        </div>  
-      </div>  
-      
+        <div class="subtitle">
+          For the artists, the creatives, the visionaries, <br />
+          the people, and of course, you.
+        </div>
+        <div id="productList" class="container">
+          <div class="productItem">
+            <a href="item.html">
+              <div class="productImage">
+                <img src="../productPics/home1.png" />
+              </div>
+            </a>
+            <div class="prodName">Product Name</div>
+          </div>
+          <div class="productItem">
+            <a href="item.html">
+              <div class="productImage">
+                <img src="../productPics/home2.png" />
+              </div>
+            </a>
+            <div class="prodName">Product Name</div>
+          </div>
+          <div class="productItem">
+            <a href="item.html">
+              <div class="productImage">
+                <img src="../productPics/home3.png" />
+              </div>
+            </a>
+            <div class="prodName">Product Name</div>
+          </div>
+          <div class="productItem">
+            <a href="item.html">
+              <div class="productImage">
+                <img src="../productPics/home4.png" />
+              </div>
+            </a>
+            <div class="prodName">Product Name</div>
+          </div>
+        </div>
+      </div>
 
       <div class="textThumbnail whiteRow">
         <div style="display: inline" class="subhead">
           Your comfort. Our
           <text style="text-decoration: underline">priority</text>.
         </div>
-        <div class="subtitle" style="color:#333;">
+        <div class="subtitle" style="color: #333">
           Free delivery. Built on the spot.
-          <br/>
+          <br />
           All YOU need to do is stay home.
         </div>
 
@@ -181,15 +191,89 @@
           </div>
           <div>
             <i class="fas fa-box-open"></i>
-              <p style="font-size: 1rem">Unpack your furniture!</p>
+            <p style="font-size: 1rem">Unpack your furniture!</p>
           </div>
         </div>
-        <a href="https://www.unicef.org/indonesia/coronavirus/stay-safe-and-keep-learning" target="_blank">
-          <div class="subtitle" style="color:#333; font-size: 20px;
-          margin: 3rem 0 -1rem 0;">#StaySafe</div>
+        <a
+          href="https://www.unicef.org/indonesia/coronavirus/stay-safe-and-keep-learning"
+          target="_blank"
+        >
+          <div
+            class="subtitle"
+            style="color: #333; font-size: 20px; margin: 3rem 0 -1rem 0"
+          >
+            #StaySafe
+          </div>
         </a>
       </div>
     </div>
+    <footer>
+      <div class="foot">
+        <!-- <a href="../pages/home.html">
+            <img id="logo-footer" src="../icons/white_fish.png" alt="">
+          </a> -->
+        <div id="menu-footer">
+          <h2>Menu</h2>
+          <ul>
+            <a href="../pages/home.html">
+              <li>Home</li>
+            </a>
+            <a href="../pages/product.html">
+              <li>Products</li>
+            </a>
+            <a href="../pages/about.html">
+              <li>About</li>
+            </a>
+            <a href="../pages/stores.html">
+              <li>Store</li>
+            </a>
+          </ul>
+        </div>
+        <div id="product-footer">
+          <h2>Products</h2>
+          <ul>
+            <a href="#">
+              <li>Chairs</li>
+            </a>
+            <a href="#">
+              <li>Tables</li>
+            </a>
+            <a href="#">
+              <li>Sofas</li>
+            </a>
+            <a href="#">
+              <li>Drawers</li>
+            </a>
+          </ul>
+        </div>
+        <div id="help-footer">
+          <h2>Help</h2>
+          <ul>
+            <a href="../pages/faq.html">
+              <li>FAQ</li>
+            </a>
+          </ul>
+        </div>
+        <div id="follow-footer">
+          <h2>Follow Us</h2>
+          <div id="follow-footer-img">
+            <a href="https://facebook.com">
+              <!-- <img src="../pictures/facebook.png" alt=""> -->
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://instagram.com">
+              <!-- <img src="../pictures/instagram.png" alt=""> -->
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com">
+              <!-- <img src="../pictures/twitter.png" alt=""> -->
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <h3 id="copyright-lele">&copy;2021, Lele Furniture</h3>
+    </footer>
     <script
       src="https://kit.fontawesome.com/c0f7e988b7.js"
       crossorigin="anonymous"
