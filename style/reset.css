@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,300&display=swap");
 
 @font-face {
   font-family: MADETOMMY;
@@ -15,32 +15,60 @@
 header {
   background: #333;
   color: #fff;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 0;
+}
+
+body {
+  background-image: url("../pictures/background.png");
+  color: white;
 }
 
 .upperHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 10rem auto 10rem;
+  margin: 2rem 2rem 0;
 }
 
-.upperHeader > img {
+.fa.fa-search.fa-lg {
+  font-size: 2.3rem !important;
+}
+
+.mainLogo {
+  display: flex;
+  justify-content: center;
+}
+
+.mainLogo > img {
   color: #fff;
   max-width: 100%;
   height: 4rem;
   fill: white;
+  cursor: pointer;
 }
 
 #searchIcon {
   height: 2.5rem;
+  font-size: 1.5rem;
   cursor: pointer;
+  width: 2.5rem;
+  color: rgb(136, 136, 136);
+  transition: 0.2s ease-in-out;
+}
+
+#searchIcon:hover {
+  color: white;
 }
 
 .upperHeader .login {
   display: flex;
   gap: 2rem;
   font-family: MADETOMMY, "sans-serif";
+  justify-content: flex-end;
+}
+
+.login > a {
+  text-decoration: none;
+  color: rgb(136, 136, 136);
 }
 
 .lowerHeader {
@@ -50,10 +78,159 @@ header {
   gap: 3rem;
   font-size: 1.25rem;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .lowerHeader > a {
-  color: #fff;
+  padding-bottom: 1rem;
+}
+
+.lowerHeader > a,
+.lowerHeader > button {
+  color: rgb(136, 136, 136);
   text-decoration: none;
-  font-family: MADETOMMY, "sans-serif";
+  font-family: "Open Sans", "sans-serif";
+}
+
+.lowerHeader > a:hover,
+.lowerHeader > button,
+.login > a:hover,
+.dropdown:hover .dropbtn {
+  color: rgb(255, 255, 255);
+  transition: 0.2s;
+}
+
+/* Search bar */
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+}
+
+.overlay-content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchContainer {
+  display: flex;
+  vertical-align: middle;
+  gap: 1rem;
+}
+
+.searchContainer > button > i {
+  font-size: 2rem !important;
+}
+
+.searchContainer > input {
+  text-decoration: none;
+  order: 0;
+  background: rgba(102, 102, 102, 0) !important;
+  position: static !important;
+  opacity: 1 !important;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+
+.overlay input[type="text"] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  width: 100%;
+  color: #fff;
+  background: none;
+  text-decoration: none !important;
+  transition: 0.5s ease-in-out;
+}
+
+.overlay button {
+  background: none;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+  color: rgb(136, 136, 136);
+  z-index: 3;
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.dropbtn:hover {
+  cursor: pointer;
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  margin-top: 1rem;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a,
+.dropdown-content label {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  z-index: 3;
+}
+
+.dropdown-content label {
+  font-size: 17px !important;
+  z-index: 3;
+  color: black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+}
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#selector {
+  z-index: 0 !important;
 }

@@ -6,31 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/reset.css" />
     <link rel="stylesheet" href="../style/home.css" />
-    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/footer.css" />
     <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/c0f7e988b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Home</title>
   </head>
   <body>
     <header>
       <div class="upperHeader">
-        <img
+        <i
+          class="fa fa-search fa-lg"
           onclick="openSearch()"
           id="searchIcon"
-          src="../icons/loupe.svg"
-          alt="search"
-        />
-        <img src="../icons/logo_white.png" alt="lele" />
+        ></i>
+        <div class="mainLogo">
+          <img
+            src="../icons/logo_white.png"
+            alt="lele"
+            onclick="location.href = 'home.html'"
+          />
+        </div>
 
         <div class="login">
-          <p>Login</p>
-          <p>Register</p>
+          <a href="login.html"
+            >Login
+            <i class="fas fa-sign-in-alt"></i>
+          </a>
         </div>
       </div>
 
       <div class="lowerHeader">
-        <a href="#">Home</a>
-        <a href="#">Categories</a>
-        <a href="#">About</a>
-        <a href="#">Stores</a>
+        <a href="home.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="location.href = 'product.html'">
+            Products
+          </button>
+          <div class="dropdown-content">
+            <label>Categories</label>
+            <a href="#">Chairs</a>
+            <a href="#">Tables</a>
+            <a href="#">Sofas</a>
+            <a href="#">Drawers</a>
+          </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="stores.html">Contact us</a>
       </div>
     </header>
 
@@ -39,12 +62,21 @@
         >×</span
       >
       <div class="overlay-content">
-        <form>
-          <input type="text" placeholder="Search Here..." name="search" />
+        <div class="searchContainer">
+          <input
+            type="text"
+            placeholder="Search Here..."
+            name="search"
+            autocomplete="off"
+          />
           <button type="submit">
-            <img src="../icons/loupe.svg" alt="search" />
+            <i
+              class="fa fa-search fa-lg"
+              id="searchIcon"
+              onclick="location.href = 'searchResults.html'"
+            ></i>
           </button>
-        </form>
+        </div>
       </div>
     </div>
 
@@ -53,102 +85,197 @@
 
       <div class="highlight">
         <div class="highlight1">
-          <div class="box1"></div>
-          <h2>Aesthetics Of the day dipisicing elit. Praesentium, ullam?</h2>
+          <div class="box1">
+            <img src="../pictures/aotd.png" />
+          </div>
+          <div class="textContainer">
+            <h2>Aesthetics Of The Day</h2>
+            <p>Modern with a funky touch!</p>
+          </div>
         </div>
 
         <div class="highlight2">
-          <h2>
-            Product of the day! Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quibusdam
-          </h2>
-          <div class="box2"></div>
+          <div class="textContainer" style="text-align: right">
+            <h2>"Nesty Couch"</h2>
+            <p>A deadly combo of cute and comfort!</p>
+          </div>
+          <div class="box2">
+            <img src="../pictures/potd.png" />
+          </div>
         </div>
       </div>
 
-      <div class="product">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+      <div class="textThumbnail">
+        <h3>
+          At Lele Furniture, we want you to do great things. That’s why we make
+          problem-solving designs that are as beautiful as they are useful.
+        </h3>
+      </div>
+
+      <div class="textThumbnail blackRow">
+        <div class="subhead">Explore Our Products</div>
+        <div class="subtitle">
+          For the artists, the creatives, the visionaries, <br />
+          the people, and of course, you.
+        </div>
+        <div id="productList" class="container">
+          <div class="productItem">
+            <a href="item.html">
+              <div class="productImage">
+                <img src="../productPics/home1.png" />
+              </div>
+            </a>
+            <div class="prodName">Tables</div>
+          </div>
+          <div class="productItem">
+            <a href="item.html">
+              <div class="productImage">
+                <img src="../productPics/home2.png" />
+              </div>
+            </a>
+            <div class="prodName">Chairs</div>
+          </div>
+          <div class="productItem">
+            <a href="item.html">
+              <div class="productImage">
+                <img src="../productPics/home3.png" />
+              </div>
+            </a>
+            <div class="prodName">Sofas</div>
+          </div>
+          <div class="productItem">
+            <a href="item.html">
+              <div class="productImage">
+                <img src="../productPics/home4.png" />
+              </div>
+            </a>
+            <div class="prodName">Drawers</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="textThumbnail whiteRow">
+        <div style="display: inline" class="subhead">
+          Your comfort. Our
+          <text style="text-decoration: underline">priority</text>.
+        </div>
+        <div class="subtitle" style="color: #333">
+          Free delivery. Built on the spot.
+          <br />
+          All YOU need to do is stay home.
+        </div>
+
+        <div class="icon">
+          <div>
+            <i class="fas fa-phone-alt"></i>
+            <p style="font-size: 1rem">Order</p>
+          </div>
+          <div>
+            <i class="fas fa-arrow-circle-right"></i>
+          </div>
+          <div>
+            <i class="fas fa-truck"></i>
+            <p style="font-size: 1rem">Wait at home</p>
+          </div>
+          <div>
+            <i class="fas fa-arrow-circle-right"></i>
+          </div>
+          <div>
+            <i class="fas fa-box-open"></i>
+            <p style="font-size: 1rem">Unpack your furniture!</p>
+          </div>
+        </div>
+        <a
+          href="https://www.unicef.org/indonesia/coronavirus/stay-safe-and-keep-learning"
+          target="_blank"
+        >
+          <div
+            class="subtitle"
+            style="color: #333; font-size: 20px; margin: 3rem 0 -1rem 0"
+          >
+            #StaySafe
+          </div>
+        </a>
       </div>
     </div>
 
-    
     <footer>
       <div class="foot">
-          <!-- <a href="../pages/home.html">
+        <!-- <a href="../pages/home.html">
             <img id="logo-footer" src="../icons/white_fish.png" alt="">
           </a> -->
-          <div id="menu-footer">
-            <h2>Menu</h2>
-            <ul>
-              <a href="../pages/home.html">
-                <li>Home</li>
-              </a>
-              <a href="../pages/product.html">
-                <li>Products</li>
-              </a>
-              <a href="../pages/about.html">
-                <li>About</li>
-              </a>
-              <a href="../pages/stores.html">
-                <li>Store</li>
-              </a>
-              
-            </ul>
+        <div id="menu-footer">
+          <h2>Menu</h2>
+          <ul>
+            <a href="../pages/home.html">
+              <li>Home</li>
+            </a>
+            <a href="../pages/product.html">
+              <li>Products</li>
+            </a>
+            <a href="../pages/about.html">
+              <li>About</li>
+            </a>
+            <a href="../pages/stores.html">
+              <li>Store</li>
+            </a>
+          </ul>
+        </div>
+        <div id="product-footer">
+          <h2>Products</h2>
+          <ul>
+            <a href="#">
+              <li>Chairs</li>
+            </a>
+            <a href="#">
+              <li>Tables</li>
+            </a>
+            <a href="#">
+              <li>Sofas</li>
+            </a>
+            <a href="#">
+              <li>Drawers</li>
+            </a>
+          </ul>
+        </div>
+        <div id="help-footer">
+          <h2>Help</h2>
+          <ul>
+            <a href="#">
+              <li>FAQ</li>
+            </a>
+          </ul>
+        </div>
+        <div id="follow-footer">
+          <h2>Follow Us</h2>
+          <div id="follow-footer-img">
+            <a href="https://facebook.com">
+              <!-- <img src="../pictures/facebook.png" alt=""> -->
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://instagram.com">
+              <!-- <img src="../pictures/instagram.png" alt=""> -->
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com">
+              <!-- <img src="../pictures/twitter.png" alt=""> -->
+              <i class="fab fa-twitter"></i>
+            </a>
           </div>
-          <div id="product-footer">
-            <h2>Products</h2>
-            <ul>
-              <a href="#">
-                <li>Chairs</li>
-              </a>
-              <a href="#">
-                <li>Tables</li>
-              </a>
-              <a href="#">
-                <li>Sofas</li>
-              </a>
-              <a href="#">
-                <li>Drawers</li>
-              </a>
-            </ul>
-          </div>
-          <div id="help-footer">
-            <h2>Help</h2>
-            <ul>
-              <a href="#">
-                <li>FAQ</li>
-              </a>
-            </ul>
-          </div>
-          <div id="follow-footer">
-            <h2>Follow Us</h2>
-            <div id="follow-footer-img">
-                <a href="https://facebook.com">
-                    <!-- <img src="../pictures/facebook.png" alt=""> -->
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://instagram.com">
-                    <!-- <img src="../pictures/instagram.png" alt=""> -->
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://twitter.com">
-                    <!-- <img src="../pictures/twitter.png" alt=""> -->
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
         </div>
       </div>
       <h3 id="copyright-lele">&copy;2021, Lele Furniture</h3>
     </footer>
-    
+
     <script src="../src/search.js"></script>
-    <script src="https://kit.fontawesome.com/c0f7e988b7.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/c0f7e988b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/c0f7e988b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../src/search.js"></script>
   </body>
 </html>

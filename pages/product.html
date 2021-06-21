@@ -8,21 +8,102 @@
 			defer
 			src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
 		></script>
-		<link rel="stylesheet" href="../style/productStyle.css" />
+		<link rel="stylesheet" href="../style/reset.css" />
+		<link rel="stylesheet" href="../style/product.css" />
 		<title>Lele Products</title>
-		<script src="../src/productPage.js"></script>
 	</head>
+
 	<body>
+		<header>
+			<div class="upperHeader">
+			  <i
+				class="fa fa-search fa-lg"
+				onclick="openSearch()"
+				id="searchIcon"
+			  ></i>
+			  <div class="mainLogo">
+				<img src="../icons/logo_white.png" alt="lele" 
+				onclick="location.href = 'home.html'"/>
+			  </div>
+	  
+			  <div class="login">
+				<a href="login.html"
+				  >Login
+				  <i class="fas fa-sign-in-alt"></i>
+				</a>
+			  </div>
+			</div>
+	  
+			<div class="lowerHeader">
+			  <a href="home.html">Home</a>
+			  <div class="dropdown">
+				<button class="dropbtn" onclick="location.href = 'product.html'">
+				  Products
+				</button>
+				<div class="dropdown-content">
+				  <label>Categories</label>
+				  <a href="#">Chairs</a>
+				  <a href="#">Tables</a>
+				  <a href="#">Sofas</a>
+				  <a href="#">Drawers</a>
+				</div>
+			  </div>
+			  <a href="about.html">About</a>
+			  <a href="stores.html">Contact us</a>
+			</div>
+		  </header>
+	  
+		  <div id="myOverlay" class="overlay">
+			<span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+			  >×</span
+			>
+			<div class="overlay-content">
+			  <div class="searchContainer">
+				<input
+				  type="text"
+				  placeholder="Search Here..."
+				  name="search"
+				  autocomplete="off"
+				/>
+				<button type="submit">
+				  <i
+				  class="fa fa-search fa-lg"
+				  id="searchIcon"
+				  onclick="location.href = 'searchResults.html'"
+				  ></i>
+				</button>
+			  </div>
+			</div>
+		  </div>
+
 		<div id="content">
 			<span class="slide">
-				<a href="#" onclick="openSlideMenu()">
-					<i class="fas fa-bars"></i>
+				<a href="javascript:void()" onclick="openSlideMenu()">
+					<i id="barsLogo" class="fas fa-angle-double-right"></i>
 				</a>
+
+				<span id="mid" class="container">
+					<span class="subHead containerItem"> Products </span>
+					<div id = "selector">
+						<div class="select" tabindex="1">
+							<input class="selectopt" name="test" type="radio" id="opt1" checked>
+							<label for="opt1" class="option">Sort by</label>
+							<input class="selectopt" name="test" type="radio" id="opt1">
+							<label for="opt1" class="option">Price (High - Low)</label>
+							<input class="selectopt" name="test" type="radio" id="opt2">
+							<label for="opt2" class="option">Price (Low - High)</label>
+							<input class="selectopt" name="test" type="radio" id="opt3">
+							<label for="opt3" class="option">Relevance</label>
+							<input class="selectopt" name="test" type="radio" id="opt4">
+							<label for="opt4" class="option">Newest Releases</label>
+						</div>
+					</div>
+				</span>
 			</span>
 
 			<div id="menu" class="nav">
-				<a href="#" class="close" onclick="closeSlideMenu()">
-					<i class="fas fa-times"></i>
+				<a href="javascript:void()" class="close" onclick="closeSlideMenu()">
+					<i class="fas fa-angle-double-left"></i>
 				</a>
 				<a href="#">Tables</a>
 				<a href="#">Chairs</a>
@@ -31,55 +112,121 @@
 				<a href="#">Mirrors</a>
 			</div>
 
-			<div id="mid" class="container">
-				<span class="subHead containerItem"> Products </span>
-				<div class="containerItem">
-					<label>Sort: </label>
-					<select id="sortBy">
-						<option>Most relevant</option>
-						<option>Price: High to Low</option>
-						<option>Price: Low to High</option>
-					</select>
-				</div>
-			</div>
 			<div id="productList" class="container">
 				<div class="productItem">
-					<div class="productImage"></div>
+					<a href="item.html">
+						<div class="productImage">
+							<img src="../productPics/product1.png">
+						</div>
+					</a>
+					<div class="prodName">Tunnel Chair</div>
+					<div class="prodPrice">Rp. 11,250,000.00</div>
 				</div>
 				<div class="productItem">
-					<div class="productImage"></div>
+					<a href="item.html">
+						<div class="productImage">
+							<img src="../productPics/product2.png">
+						</div>
+					</a>
+					<div class="prodName">Messy 20 Drawers</div>
+					<div class="prodPrice">Rp. 4,250,000.00</div>
 				</div>
 				<div class="productItem">
-					<div class="productImage"></div>
+					<a href="item.html">
+						<div class="productImage">
+							<img src="../productPics/product3.png">
+						</div>
+					</a>
+					<div class="prodName">Stone Wall Wardrobe</div>
+					<div class="prodPrice">Rp. 3,000,000.00</div>
 				</div>
 				<div class="productItem">
-					<div class="productImage"></div>
+					<a href="item.html">
+						<div class="productImage">
+							<img src="../productPics/product4.png">
+						</div>
+					</a>
+					<div class="prodName">Ripped-Out Drawers</div>
+					<div class="prodPrice">Rp. 6,000,000.00</div>
 				</div>
 				<div class="productItem">
-					<div class="productImage"></div>
+					<a href="item.html">
+						<div class="productImage">
+							<img src="../productPics/product5.png">
+						</div>
+					</a>
+					<div class="prodName">HiPoPo-Sofa</div>
+					<div class="prodPrice">Rp. 10,000,000.00</div>
 				</div>
 				<div class="productItem">
-					<div class="productImage"></div>
+					<a href="item.html">
+						<div class="productImage">
+							<img src="../productPics/product6.png">
+						</div>
+					</a>
+					<div class="prodName">Wired-Up Noodly Sofa</div>
+					<div class="prodPrice">Rp. 8,0000,000.00</div>
 				</div>
 				<div class="productItem">
-					<div class="productImage"></div>
+					<a href="item.html">
+						<div class="productImage">
+							<img src="../productPics/product7.png">
+						</div>
+					</a>
+					<div class="prodName">Rhino-Chair-os</div>
+					<div class="prodPrice">Rp. 5,000,000.00</div>
 				</div>
 				<div class="productItem">
-					<div class="productImage"></div>
+					<a href="item.html">
+						<div class="productImage">
+							<img src="../productPics/product8.png">
+						</div>
+					</a>
+					<div class="prodName">Onion Strings Chair</div>
+					<div class="prodPrice">Rp. 4,500,000.00</div>
 				</div>
 				<div class="productItem">
-					<div class="productImage"></div>
+					<a href="item.html">
+						<div class="productImage">
+							<img src="../productPics/product9.png">
+						</div>
+					</a>
+					<div class="prodName">Bulged table</div>
+					<div class="prodPrice">Rp. 2,500,000.00</div>
 				</div>
 				<div class="productItem">
-					<div class="productImage"></div>
-				</div>
-				<div class="productItem">
-					<div class="productImage"></div>
-				</div>
-				<div class="productItem">
-					<div class="productImage"></div>
+					<a href="item.html">
+						<div class="productImage">
+							<img src="../productPics/product10.png">
+						</div>
+					</a>
+					<div class="prodName">Mineral Glass Table</div>
+					<div class="prodPrice">Rp. 4,000,000.00</div>
 				</div>
 			</div>
 		</div>
+		<div id="content2">
+			<div id="content2Text">
+				<h2>Quality materials +<br/>Cutting-edge design</h2>
+				<br/>
+				<h3>Here are some of our handpicked flagship products this season. Created through years
+					of innovation and experience. We produce the best of the best furniture, with no corners
+					cut.
+				</h3>
+			</div>
+			<div id="content2Images">
+				<div class="content2img">
+					<img src="../productPics/productalt1.png">
+				</div>
+				<div class="content2img">
+					<img src="../productPics/productalt2.png">
+				</div>
+				<div class="content2img">
+					<img src="../productPics/productalt3.png">
+				</div>
+			</div>
+		</div>
+		<script src="../src/productPage.js"></script>
+		<script src="../src/search.js"></script>
 	</body>
 </html>

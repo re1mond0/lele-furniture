@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+
+@font-face {
+  font-family: MADETOMMY;
+  src: url(../fonts/MADE\ TOMMY\ Medium.otf);
+}
+
+.subHead {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif !important;
+  text-align: center;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+label {
+  font-size: 20px;
+}
+
+.container {
+  display: grid;
+}
+
+.containerItem {
+  padding: 1rem;
+}
+
+#mid {
+  grid-template-columns: auto;
+  justify-content: center;
+  margin-top: -3rem;
+}
+
+#productList {
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.productItem {
+  height: fit-content;
+  display: flex;
+  padding: 10px;
+  width: min-content;
+  flex-direction: column;
+}
+
+#productList > div > i {
+  color: rgb(163, 163, 163);
+  transition: 0.2s ease-in-out;
+  position: absolute;
+  font-size: 30px;
+  margin: 10px 0 0 260px;
+}
+
+#productList > div > i:hover {
+  color: #ff5050;
+}
+
+.prodName {
+  font-size: 20px;
+  margin-top: 0.2rem;
+  color: #ff5050;
+}
+
+.prodPrice {
+  font-size: 15px;
+}
+
+#content {
+  margin-top: 5rem;
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.productImage {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  overflow: hidden;
+  background-position: center;
+}
+
+.productImage img {
+  transition: 0.5s ease-in-out;
+}
+
+.productImage:hover img {
+  transform: scale(1.1);
+}
+
+#selector {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  align-self: flex-start !important;
+}
+
+.select {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 250px;
+  height: 40px;
+}
+
+.option {
+  padding: 0 30px 0 10px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  background: #333;
+  border-top: #222 solid 1px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  pointer-events: none;
+  order: 2;
+  z-index: 1;
+  transition: background 0.4s ease-in-out;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.option:hover {
+  background: #666;
+}
+
+.select:focus .option {
+  position: relative;
+  pointer-events: all;
+}
+
+input {
+  opacity: 0;
+  position: absolute;
+  left: -99999px;
+}
+
+input:checked + label {
+  order: 1;
+  z-index: 2;
+  background: #666;
+  border-top: none;
+  position: relative;
+}
+
+input:checked + label:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white;
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 2.5px);
+  pointer-events: none;
+  z-index: 3;
+}
+
+input:checked + label:before {
+  position: absolute;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  content: "";
+  background: #666;
+}
+
+#content > button {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 15px;
+  padding: 1rem;
+  gap: 1rem;
+  font-family: "MADE TOMMY", sans-serif;
+  border: 2px solid white;
+  color: white;
+  transition: 0.2s ease-in-out;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#content > button:hover {
+  color: #333;
+  background-color: white;
+}
+
+@media (min-width: 768px) {
+  #productList {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  #productList {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  #productList {
+    grid-template-columns: auto auto auto auto auto;
+  }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Forgot your password</title>
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://kit.fontawesome.com/c0f7e988b7.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="../stylesreset.css" />
+		<link id="theme" rel="stylesheet" href="../style/login-register.css" />
+		
+	</head>
+	<body>
+		<div id="sessionContainer">
+			<span class="subhead">We've sent you an email</span>
+			<span class="smallText" style="text-align: center; color: #ff5050">
+                It might take a few minutes to arrive  
+                <i class="fas fa-hourglass-half"></i>
+            </span>
+            <span class="smallText" style="text-align: center; font-size: 12px;">
+                If you still haven't received an email from us, click below to resend, or go back to the login page if you have
+            </span>
+			<button id="signinBtn">Resend email
+                <i class="fas fa-envelope"></i>
+            </button>
+            <button id="altBtn" onclick="location.href = 'login.html'">Go back to login
+                <i class="fas fa-sign-in-alt"></i>
+            </button>
+            <span class="tinyText">Don't forget to check your spam folder!</span>
+		</div>
+
+		<script src="../src/clock.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</body>
+</html>
